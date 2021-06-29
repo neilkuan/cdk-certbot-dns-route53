@@ -36,5 +36,5 @@ new CertbotDnsRoute53Job(stack, 'Demo', {
 ### Example: Invoke Lambda Function log.
 ![](./images/lambda-logs.png)
 
-### Example: Renew certificat to store on S3 Bucket
+### Example: Renew certificate to store on S3 Bucket
 ![](./images/s3-bucket.png)
