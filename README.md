@@ -1,6 +1,6 @@
 [![NPM version](https://badge.fury.io/js/cdk-certbot-dns-route53.svg)](https://badge.fury.io/js/cdk-certbot-dns-route53)
 [![PyPI version](https://badge.fury.io/py/cdk-certbot-dns-route53.svg)](https://badge.fury.io/py/cdk-certbot-dns-route53)
-![Release](https://github.com/pahud/cdk-certbot-dns-route53/workflows/Release/badge.svg)
+[![Release](https://github.com/neilkuan/cdk-certbot-dns-route53/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/neilkuan/cdk-certbot-dns-route53/actions/workflows/release.yml)
 
 # cdk-certbot-dns-route53 
 **cdk-certbot-dns-route53** is a CDK construct library that allows you to create [Certbot](https://github.com/certbot/certbot) Lmabda Function on AWS with CDK, and setting schedule cron job to renew certificate to store on S3 Bucket.
