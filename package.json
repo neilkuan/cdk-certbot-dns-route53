@@ -1,6 +1,6 @@
 {
   "name": "cdk-certbot-dns-route53",
-  "description": "Create Cron Job Via Lmabda, to update certificat and put it to S3 Bucket",
+  "description": "Create Cron Job Via Lambda, to update certificat and put it to S3 Bucket",
   "repository": {
     "type": "git",
     "url": "https://github.com/neilkuan/cdk-certbot-dns-route53.git"
