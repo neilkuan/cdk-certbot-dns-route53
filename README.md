@@ -3,7 +3,7 @@
 [![Release](https://github.com/neilkuan/cdk-certbot-dns-route53/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/neilkuan/cdk-certbot-dns-route53/actions/workflows/release.yml)
 
 # cdk-certbot-dns-route53 
-**cdk-certbot-dns-route53** is a CDK construct library that allows you to create [Certbot](https://github.com/certbot/certbot) Lmabda Function on AWS with CDK, and setting schedule cron job to renew certificate to store on S3 Bucket.
+**cdk-certbot-dns-route53** is a CDK construct library that allows you to create [Certbot](https://github.com/certbot/certbot) Lambda Function on AWS with CDK, and setting schedule cron job to renew certificate to store on S3 Bucket.
 
 ```ts
 import * as r53 from '@aws-cdk/aws-route53';
@@ -25,7 +25,7 @@ new CertbotDnsRoute53Job(stack, 'Demo', {
     domainName: '*.example.com',
     email: 'user@example.com',
   },
-  zone: r53.HostedZone.fromHostedZoneAttributes(stack, 'myZone', {
+  zone: r53.HostedZone.fromHostedZoneAttributes(stack, 'myZone', {｀
     zoneName: 'example.com',
     hostedZoneId:  'mockId',
   }),
