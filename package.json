@@ -79,7 +79,9 @@
   },
   "bundledDependencies": [],
   "keywords": [
-    "cdk"
+    "aws",
+    "cdk",
+    "certbot"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
