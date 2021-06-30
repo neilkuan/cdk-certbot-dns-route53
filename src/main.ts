@@ -2,7 +2,7 @@ import * as path from 'path';
 import * as events from '@aws-cdk/aws-events';
 import * as target from '@aws-cdk/aws-events-targets';
 import * as iam from '@aws-cdk/aws-iam';
-import * as lambda from '@aws-cdk/aws-lambda';
+// import * as lambda from '@aws-cdk/aws-lambda';
 // import * as logs from '@aws-cdk/aws-logs';
 import * as r53 from '@aws-cdk/aws-route53';
 import * as s3 from '@aws-cdk/aws-s3';
@@ -13,12 +13,12 @@ export interface CertbotOptions {
   /**
    * the domain must host on route53 like example.com.
    *
-   * @example - *.example.com
+   * @example - `*.example.com` or `a.example.com` .
    */
   readonly domainName: string;
 
   /**
-   * Email address for important account notifications
+   * Email address for important account notifications.
    */
   readonly email: string;
 }
@@ -56,24 +56,12 @@ export class CertbotDnsRoute53Job extends cdk.Construct {
     const lambdaFun = new BashExecFunction(this, 'certbotDnsRoute53JobLambda', {
       script: path.join(__dirname, '../docker.d/entrypoint.sh'),
       dockerfile: path.join(__dirname, '../docker.d/Dockerfile'),
+      timeout: cdk.Duration.minutes(5),
       environment: {
         BUCKET_NAME: props.destinationBucket.bucketName,
         ...certOptions,
       },
     });
-
-    // overwrite lambda function timeout.
-    (lambdaFun.handler.node.tryFindChild('Resource') as lambda.CfnFunction).addPropertyOverride('Timeout', 300);
-    // const lambdaFun = new lambda.DockerImageFunction(this, 'certbotDnsRoute53JobLambda', {
-    //   functionName: 'certbotDnsRoute53JobLambda',
-    //   code: lambda.DockerImageCode.fromImageAsset(path.join(__dirname, '../docker.d')),
-    //   logRetention: logs.RetentionDays.ONE_DAY,
-    //   environment: {
-    //     BUCKET_NAME: props.destinationBucket.bucketName,
-    //     ...certOptions,
-    //   },
-    //   timeout: cdk.Duration.minutes(5),
-    // });
 
     props.destinationBucket.grantReadWrite(lambdaFun.handler.role!);
     const route53PolicyJsonList = [{
