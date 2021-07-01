@@ -6,7 +6,7 @@ const project = new AwsCdkConstructLibrary({
   defaultReleaseBranch: 'main',
   name: 'cdk-certbot-dns-route53',
   repositoryUrl: 'https://github.com/neilkuan/cdk-certbot-dns-route53.git',
-  description: 'Create Cron Job Via Lambda, to update certificat and put it to S3 Bucket',
+  description: 'Create Cron Job Via Lambda, to update certificate and put it to S3 Bucket.',
   keywords: ['aws', 'cdk', 'certbot'],
   cdkDependencies: [
     '@aws-cdk/aws-lambda',
@@ -39,7 +39,7 @@ const project = new AwsCdkConstructLibrary({
     module: 'cdk_certbot_dns_route53',
   },
   catalog: {
-    announce: true,
+    announce: false,
     twitter: 'neilkuan',
   },
   gitignore: [
