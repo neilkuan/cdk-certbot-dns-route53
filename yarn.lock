@@ -2044,10 +2044,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cdk-lambda-bash@0.5.29:
-  version "0.5.29"
-  resolved "https://registry.yarnpkg.com/cdk-lambda-bash/-/cdk-lambda-bash-0.5.29.tgz#2abaa9f33971b4135f16528a3bdf7d1c26e87b8d"
-  integrity sha512-LgIKBypB7nLqSahUXecx6I8iGpfr/lUgo0XaRZgSZwCPLnxDJmNMqF+JXbq5pivw4y3MHjDReo1xmqusvu7lEA==
+cdk-lambda-bash@0.5.30:
+  version "0.5.30"
+  resolved "https://registry.yarnpkg.com/cdk-lambda-bash/-/cdk-lambda-bash-0.5.30.tgz#7ce4dd03a5732841635a4ad78cf1bdf47b80a89b"
+  integrity sha512-Yl6EdRFUQ6VNDf/B4F1RpWJWC/3DIt5uBUBsURaSNc5cofZ542jHUvrwciz/uvL/rejxG+1Exowvw9jdjQPeTg==
   dependencies:
     "@aws-cdk/aws-lambda" "^1.93.0"
     "@aws-cdk/aws-logs" "^1.93.0"
@@ -6882,10 +6882,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.3.4:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.4.tgz#3f85b986945bcf31071decdd96cf8bfa65f9dcbc"
-  integrity sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==
+typescript@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
+  integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
 
 typescript@~3.9.9:
   version "3.9.10"
