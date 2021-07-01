@@ -39,7 +39,7 @@ const project = new AwsCdkConstructLibrary({
     module: 'cdk_certbot_dns_route53',
   },
   catalog: {
-    announce: false,
+    announce: true,
     twitter: 'neilkuan',
   },
   gitignore: [
