@@ -2042,10 +2042,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cdk-lambda-bash@0.5.39:
-  version "0.5.39"
-  resolved "https://registry.yarnpkg.com/cdk-lambda-bash/-/cdk-lambda-bash-0.5.39.tgz#a09990dfece84221dc75f0354bcc97f882c95123"
-  integrity sha512-3lOJnqQJV1yGvK9JfRh3ZNMwn+Ujk1XDcY/NPrIESP1pePUskAkYLMX2PXWafII7WZM7i2vm51B69k9J1UfAZQ==
+cdk-lambda-bash@0.5.40:
+  version "0.5.40"
+  resolved "https://registry.yarnpkg.com/cdk-lambda-bash/-/cdk-lambda-bash-0.5.40.tgz#f4f148046ef697066ea8607da2aec1d04abda488"
+  integrity sha512-Zkn4Onu/PPjdK+pTWPaX5CAnUh/GMla+jkEK3Z6L2vG49XK34wnMxj3s75ny8fyDqBrQP+1PEd3ARyUMbBI9dw==
   dependencies:
     "@aws-cdk/aws-lambda" "^1.93.0"
     "@aws-cdk/aws-logs" "^1.93.0"
@@ -7014,9 +7014,9 @@ write-file-atomic@^3.0.0:
     typedarray-to-buffer "^3.1.5"
 
 ws@^7.4.5:
-  version "7.5.2"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.2.tgz#09cc8fea3bec1bc5ed44ef51b42f945be36900f6"
-  integrity sha512-lkF7AWRicoB9mAgjeKbGqVUekLnSNO4VjKVnuPHpQeOxZOErX6BPXwJk70nFslRCEEA8EVW7ZjKwXaP9N+1sKQ==
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.3.tgz#160835b63c7d97bfab418fc1b8a9fced2ac01a74"
+  integrity sha512-kQ/dHIzuLrS6Je9+uv81ueZomEwH0qVYstcAQ4/Z93K8zeko9gtAbttJWzoC5ukqXY1PpoouV3+VSOqEAFt5wg==
 
 xdg-basedir@^4.0.0:
   version "4.0.0"
