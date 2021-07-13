@@ -35,8 +35,8 @@
     "@aws-cdk/assert": "^1.110.1",
     "@types/jest": "^26.0.24",
     "@types/node": "^10.17.0",
-    "@typescript-eslint/eslint-plugin": "^4.28.2",
-    "@typescript-eslint/parser": "^4.28.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
     "eslint": "^7.30.0",
     "eslint-import-resolver-node": "^0.3.4",
     "eslint-import-resolver-typescript": "^2.4.0",
@@ -63,7 +63,7 @@
     "@aws-cdk/aws-route53": "^1.110.1",
     "@aws-cdk/aws-s3": "^1.110.1",
     "@aws-cdk/core": "^1.110.1",
-    "cdk-lambda-bash": "0.5.40",
+    "cdk-lambda-bash": "0.5.41",
     "constructs": "^3.2.27"
   },
   "dependencies": {
@@ -75,7 +75,7 @@
     "@aws-cdk/aws-route53": "^1.110.1",
     "@aws-cdk/aws-s3": "^1.110.1",
     "@aws-cdk/core": "^1.110.1",
-    "cdk-lambda-bash": "0.5.40"
+    "cdk-lambda-bash": "0.5.41"
   },
   "bundledDependencies": [],
   "keywords": [
