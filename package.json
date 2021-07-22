@@ -51,7 +51,7 @@
     "npm-check-updates": "^11",
     "projen": "^0.24.12",
     "standard-version": "^9",
-    "ts-jest": "^27.0.3",
+    "ts-jest": "^27.0.4",
     "typescript": "^4.3.5"
   },
   "peerDependencies": {
@@ -63,7 +63,7 @@
     "@aws-cdk/aws-route53": "^1.110.1",
     "@aws-cdk/aws-s3": "^1.110.1",
     "@aws-cdk/core": "^1.110.1",
-    "cdk-lambda-bash": "0.5.48",
+    "cdk-lambda-bash": "0.5.49",
     "constructs": "^3.2.27"
   },
   "dependencies": {
@@ -75,7 +75,7 @@
     "@aws-cdk/aws-route53": "^1.110.1",
     "@aws-cdk/aws-s3": "^1.110.1",
     "@aws-cdk/core": "^1.110.1",
-    "cdk-lambda-bash": "0.5.48"
+    "cdk-lambda-bash": "0.5.49"
   },
   "bundledDependencies": [],
   "keywords": [
