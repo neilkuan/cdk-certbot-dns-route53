@@ -1,75 +1,109 @@
-# API Reference
+# API Reference <a name="API Reference"></a>
 
-**Classes**
+## Constructs <a name="Constructs"></a>
 
-Name|Description
-----|-----------
-[CertbotDnsRoute53Job](#cdk-certbot-dns-route53-certbotdnsroute53job)|*No description*
+### CertbotDnsRoute53Job <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job"></a>
 
+#### Initializer <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job.Initializer"></a>
 
-**Structs**
+```typescript
+import { CertbotDnsRoute53Job } from 'cdk-certbot-dns-route53'
 
-Name|Description
-----|-----------
-[CertbotDnsRoute53JobProps](#cdk-certbot-dns-route53-certbotdnsroute53jobprops)|*No description*
-[CertbotOptions](#cdk-certbot-dns-route53-certbotoptions)|*No description*
-
-
-
-## class CertbotDnsRoute53Job  <a id="cdk-certbot-dns-route53-certbotdnsroute53job"></a>
-
-
-
-__Implements__: [IConstruct](#constructs-iconstruct), [IConstruct](#aws-cdk-core-iconstruct), [IConstruct](#constructs-iconstruct), [IDependable](#aws-cdk-core-idependable)
-__Extends__: [Construct](#aws-cdk-core-construct)
-
-### Initializer
-
-
-
-
-```ts
 new CertbotDnsRoute53Job(scope: Construct, id: string, props: CertbotDnsRoute53JobProps)
 ```
 
-* **scope** (<code>[Construct](#aws-cdk-core-construct)</code>)  *No description*
-* **id** (<code>string</code>)  *No description*
-* **props** (<code>[CertbotDnsRoute53JobProps](#cdk-certbot-dns-route53-certbotdnsroute53jobprops)</code>)  *No description*
-  * **certbotOptions** (<code>[CertbotOptions](#cdk-certbot-dns-route53-certbotoptions)</code>)  certbot cmd options. 
-  * **destinationBucket** (<code>[IBucket](#aws-cdk-aws-s3-ibucket)</code>)  The S3 bucket to store certificate. 
-  * **zone** (<code>[IHostedZone](#aws-cdk-aws-route53-ihostedzone)</code>)  The HostZone on route53 to dns-01 challenge. 
-  * **schedule** (<code>[Schedule](#aws-cdk-aws-events-schedule)</code>)  run the Job with defined schedule. __*Default*__: no shedule
+##### `scope`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job.parameter.scope"></a>
 
+- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
 
+---
 
+##### `id`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job.parameter.id"></a>
 
-## struct CertbotDnsRoute53JobProps  <a id="cdk-certbot-dns-route53-certbotdnsroute53jobprops"></a>
+- *Type:* `string`
 
+---
 
+##### `props`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job.parameter.props"></a>
 
+- *Type:* [`cdk-certbot-dns-route53.CertbotDnsRoute53JobProps`](#cdk-certbot-dns-route53.CertbotDnsRoute53JobProps)
 
-
-
-Name | Type | Description 
------|------|-------------
-**certbotOptions** | <code>[CertbotOptions](#cdk-certbot-dns-route53-certbotoptions)</code> | certbot cmd options.
-**destinationBucket** | <code>[IBucket](#aws-cdk-aws-s3-ibucket)</code> | The S3 bucket to store certificate.
-**zone** | <code>[IHostedZone](#aws-cdk-aws-route53-ihostedzone)</code> | The HostZone on route53 to dns-01 challenge.
-**schedule**? | <code>[Schedule](#aws-cdk-aws-events-schedule)</code> | run the Job with defined schedule.<br/>__*Default*__: no shedule
-
-
-
-## struct CertbotOptions  <a id="cdk-certbot-dns-route53-certbotoptions"></a>
+---
 
 
 
 
 
+## Structs <a name="Structs"></a>
 
-Name | Type | Description 
------|------|-------------
-**domainName** | <code>string</code> | the domain must host on route53 like example.com.
-**email** | <code>string</code> | Email address for important account notifications.
+### CertbotDnsRoute53JobProps <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { CertbotDnsRoute53JobProps } from 'cdk-certbot-dns-route53'
+
+const certbotDnsRoute53JobProps: CertbotDnsRoute53JobProps = { ... }
+```
+
+##### `certbotOptions`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.certbotOptions"></a>
+
+- *Type:* [`cdk-certbot-dns-route53.CertbotOptions`](#cdk-certbot-dns-route53.CertbotOptions)
+
+certbot cmd options.
+
+---
+
+##### `destinationBucket`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.destinationBucket"></a>
+
+- *Type:* [`@aws-cdk/aws-s3.IBucket`](#@aws-cdk/aws-s3.IBucket)
+
+The S3 bucket to store certificate.
+
+---
+
+##### `zone`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.zone"></a>
+
+- *Type:* [`@aws-cdk/aws-route53.IHostedZone`](#@aws-cdk/aws-route53.IHostedZone)
+
+The HostZone on route53 to dns-01 challenge.
+
+---
+
+##### `schedule`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.schedule"></a>
+
+- *Type:* [`@aws-cdk/aws-events.Schedule`](#@aws-cdk/aws-events.Schedule)
+- *Default:* no shedule
+
+run the Job with defined schedule.
+
+---
+
+### CertbotOptions <a name="cdk-certbot-dns-route53.CertbotOptions"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { CertbotOptions } from 'cdk-certbot-dns-route53'
+
+const certbotOptions: CertbotOptions = { ... }
+```
+
+##### `domainName`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotOptions.property.domainName"></a>
+
+- *Type:* `string`
+
+the domain must host on route53 like example.com.
+
+---
+
+##### `email`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotOptions.property.email"></a>
+
+- *Type:* `string`
+
+Email address for important account notifications.
+
+---
 
 
 
