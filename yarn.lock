@@ -2074,10 +2074,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cdk-lambda-bash@^0.5.77:
-  version "0.5.77"
-  resolved "https://registry.yarnpkg.com/cdk-lambda-bash/-/cdk-lambda-bash-0.5.77.tgz#4d385809d396f3e70d102c1b22886a9e66a0c7b2"
-  integrity sha512-Nn3cVu1GU/inrxEfrWbPjtjgYL5I5hIBMSCsO10bQzENszRmNapozD7pru0FNcTRJUWRsl+r7yCp1OI/s9Qf8A==
+cdk-lambda-bash@^0.5.78:
+  version "0.5.78"
+  resolved "https://registry.yarnpkg.com/cdk-lambda-bash/-/cdk-lambda-bash-0.5.78.tgz#50d0d29774ac14b77b893b706474c6c2d65518b5"
+  integrity sha512-gtgIUIXt5S7qnayqNCV8ue2oHfPmhJv0tUZGYOqvp3FvbfTR+UvL5zmGwKlANgvUm4qcmqtLqystWo0EqIpKJQ==
   dependencies:
     "@aws-cdk/aws-iam" "^1.93.0"
     "@aws-cdk/aws-lambda" "^1.93.0"
