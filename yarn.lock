@@ -1493,9 +1493,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "16.7.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.4.tgz#68a9384694af63ceab8848e95d76d9a3519e84b6"
-  integrity sha512-25QXpDsTiDnl2rZGUenagVMwO46way8dOUdvoC3R3p+6TrbpxeJBo/v87BEG1IHI31Jhaa8lPeSHcqwxsVBeYQ==
+  version "16.7.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.5.tgz#96142b243977b03d99c338fdb09241d286102711"
+  integrity sha512-E7SpxDXoHEpmZ9C1gSqwadhE6zPRtf3g0gJy9Y51DsImnR5TcDs3QEiV/3Q7zOM8LWaZp5Gph71NK6ElVMG1IQ==
 
 "@types/node@^10.17.0", "@types/node@^10.17.60":
   version "10.17.60"
@@ -2099,10 +2099,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cdk-lambda-bash@^0.5.81:
-  version "0.5.83"
-  resolved "https://registry.yarnpkg.com/cdk-lambda-bash/-/cdk-lambda-bash-0.5.83.tgz#ae96f01b4fdc5c4d9b51785a245941268e061e09"
-  integrity sha512-SPz1yxSm/QaphNL98N3dK7fHCNS+/BKuA9MJtVJBSd9NonRdzyPsbja3EkT7VB5LDByLX6YTEKrihYEi9dNqTQ==
+cdk-lambda-bash@^0.5.84:
+  version "0.5.84"
+  resolved "https://registry.yarnpkg.com/cdk-lambda-bash/-/cdk-lambda-bash-0.5.84.tgz#06a77fe99ac5d948cd2ddf92aed7e96008683b06"
+  integrity sha512-YVKaoNGxJSq8SusC89x37mLCnL+vLN0Qgvpr5ZPG0TWVHvSfxlDL2dxi6rijWiAT0eG+JpX8p7/syXLWaF7q8w==
   dependencies:
     "@aws-cdk/aws-iam" "^1.93.0"
     "@aws-cdk/aws-lambda" "^1.93.0"
@@ -2326,9 +2326,9 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^3.3.69:
-  version "3.3.135"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.135.tgz#b694ec32c740f335091c27050da2819f8a1e4062"
-  integrity sha512-IebqTEdGH84OfuG3xocaRS/Zqn+bEpp9BkHuHVaqxWvtz3qtS5I0lmj0iQYb5j9Ksu0lYVBVOzuYt/jPZTNwYQ==
+  version "3.3.136"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.136.tgz#9a311737bb802f7931a1f38c5223d82fa3efd08d"
+  integrity sha512-8qGuZTTXxsV3uUtqbajcQhcuu28bcuYG5jODXlXWLpd4bSo+2dMg5vKLr0dsRm/Q3B7op7io1P0opMzaGdCO5A==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.12"
@@ -4529,7 +4529,7 @@ jest-worker@^27.1.0:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jest@^27.0.6:
+jest@^27.1.0:
   version "27.1.0"
   resolved "https://registry.yarnpkg.com/jest/-/jest-27.1.0.tgz#eaab62dfdc02d8b7c814cd27b8d2d92bc46d3d69"
   integrity sha512-pSQDVwRSwb109Ss13lcMtdfS9r8/w2Zz8+mTUA9VORD66GflCdl8nUFCqM96geOD2EBwWCNURrNAfQsLIDNBdg==
@@ -4627,10 +4627,10 @@ jsii-diff@^1.34.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^3.3.4:
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-3.3.6.tgz#145a88209d2c4c252d35d3170a80ba2582ed9b74"
-  integrity sha512-NN3iBvmu+nJhn9oD1j5y1NdhkT8Hs2pBtHHE7bhXqucze93y8m8DPeAW1It+WBsexIte6od/yZm/jt1Sv2p8AQ==
+jsii-docgen@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-3.3.7.tgz#87d7dae728d8fac5ecde01c655505d53673fd7ea"
+  integrity sha512-RCZ3P7iPVfm6ncHfPbtZJWjp9CJ4dfI2++3mSLSx9Fd29NpHzRAdyAa9gfQVL+wB3F2sl60lnfdogOZg5AVSPA==
   dependencies:
     "@jsii/spec" "^1.34.0"
     case "^1.6.3"
@@ -6818,7 +6818,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.3.5:
+typescript@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.2.tgz#6d618640d430e3569a1dfb44f7d7e600ced3ee86"
   integrity sha512-gzP+t5W4hdy4c+68bfcv0t400HVJMMd2+H9B7gae1nQlBzCqvrXX+6GL/b3GAgyTH966pzrZ70/fRjwAtZksSQ==
@@ -7102,9 +7102,9 @@ write-file-atomic@^3.0.0:
     typedarray-to-buffer "^3.1.5"
 
 ws@^7.4.6:
-  version "7.5.3"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.3.tgz#160835b63c7d97bfab418fc1b8a9fced2ac01a74"
-  integrity sha512-kQ/dHIzuLrS6Je9+uv81ueZomEwH0qVYstcAQ4/Z93K8zeko9gtAbttJWzoC5ukqXY1PpoouV3+VSOqEAFt5wg==
+  version "7.5.4"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.4.tgz#56bfa20b167427e138a7795de68d134fe92e21f9"
+  integrity sha512-zP9z6GXm6zC27YtspwH99T3qTG7bBFv2VIkeHstMLrLlDJuzA7tQ5ls3OJ1hOGGCzTQPniNJoHXIAOS0Jljohg==
 
 xdg-basedir@^4.0.0:
   version "4.0.0"
