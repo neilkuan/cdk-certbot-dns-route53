@@ -648,7 +648,7 @@
     string-width "^4.2.2"
     table "^6.7.1"
 
-"@aws-cdk/core@1.121.0", "@aws-cdk/core@^1.93.0":
+"@aws-cdk/core@1.121.0", "@aws-cdk/core@^1.121.0", "@aws-cdk/core@^1.93.0":
   version "1.121.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/core/-/core-1.121.0.tgz#fdf35e8b84fde96330e27e2a0ff5583300cf1428"
   integrity sha512-TLtDj2t507pv3GrNyosJx24QoJD2NMuvRE8urxLOmoqjANHcl1f21B8kYpcNgH8QGKJDu53xCcVihmXIPPtMvA==

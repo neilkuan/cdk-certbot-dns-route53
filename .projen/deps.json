@@ -125,6 +125,11 @@
       "type": "peer"
     },
     {
+      "name": "@aws-cdk/core",
+      "version": "^1.121.0",
+      "type": "peer"
+    },
+    {
       "name": "cdk-lambda-bash",
       "type": "peer"
     },
@@ -165,6 +170,11 @@
     },
     {
       "name": "@aws-cdk/aws-s3",
+      "version": "^1.121.0",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/core",
       "version": "^1.121.0",
       "type": "runtime"
     },

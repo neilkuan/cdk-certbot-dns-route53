@@ -64,6 +64,7 @@
     "@aws-cdk/aws-logs": "^1.121.0",
     "@aws-cdk/aws-route53": "^1.121.0",
     "@aws-cdk/aws-s3": "^1.121.0",
+    "@aws-cdk/core": "^1.121.0",
     "cdk-lambda-bash": "^0.5.88",
     "constructs": "^3.2.27"
   },
@@ -75,6 +76,7 @@
     "@aws-cdk/aws-logs": "^1.121.0",
     "@aws-cdk/aws-route53": "^1.121.0",
     "@aws-cdk/aws-s3": "^1.121.0",
+    "@aws-cdk/core": "^1.121.0",
     "cdk-lambda-bash": "^0.5.88"
   },
   "bundledDependencies": [],

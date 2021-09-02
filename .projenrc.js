@@ -13,6 +13,7 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/aws-iam',
     '@aws-cdk/aws-logs',
     '@aws-cdk/aws-s3',
+    '@aws-cdk/core',
     '@aws-cdk/aws-route53',
     '@aws-cdk/aws-events',
     '@aws-cdk/aws-events-targets',
