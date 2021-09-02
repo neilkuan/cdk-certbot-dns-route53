@@ -2,7 +2,7 @@ const { AwsCdkConstructLibrary, DependenciesUpgradeMechanism } = require('projen
 const project = new AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '1.120.0',
+  cdkVersion: '1.121.0',
   defaultReleaseBranch: 'main',
   name: 'cdk-certbot-dns-route53',
   repositoryUrl: 'https://github.com/neilkuan/cdk-certbot-dns-route53.git',
@@ -10,7 +10,6 @@ const project = new AwsCdkConstructLibrary({
   keywords: ['aws', 'cdk', 'certbot'],
   cdkDependencies: [
     '@aws-cdk/aws-lambda',
-    '@aws-cdk/core',
     '@aws-cdk/aws-iam',
     '@aws-cdk/aws-logs',
     '@aws-cdk/aws-s3',
