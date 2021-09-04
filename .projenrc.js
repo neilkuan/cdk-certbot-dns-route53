@@ -18,6 +18,7 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/aws-events',
     '@aws-cdk/aws-events-targets',
   ],
+  minNodeVersion: '12.19.0',
   deps: [
     'cdk-lambda-bash',
   ],
