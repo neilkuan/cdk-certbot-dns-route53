@@ -4,7 +4,7 @@
 
 ### CertbotDnsRoute53Job <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job"></a>
 
-#### Initializer <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job.Initializer"></a>
+#### Initializers <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job.Initializer"></a>
 
 ```typescript
 import { CertbotDnsRoute53Job } from 'cdk-certbot-dns-route53'
