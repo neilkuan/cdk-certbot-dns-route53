@@ -2,7 +2,7 @@ const { AwsCdkConstructLibrary, DependenciesUpgradeMechanism } = require('projen
 const project = new AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '1.121.0',
+  cdkVersion: '1.122.0',
   defaultReleaseBranch: 'main',
   name: 'cdk-certbot-dns-route53',
   repositoryUrl: 'https://github.com/neilkuan/cdk-certbot-dns-route53.git',
@@ -19,12 +19,6 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/aws-events-targets',
   ],
   minNodeVersion: '14.15.0',
-  deps: [
-    'cdk-lambda-bash',
-  ],
-  peerDeps: [
-    'cdk-lambda-bash',
-  ],
   depsUpgrade: DependenciesUpgradeMechanism.githubWorkflow({
     ignoreProjen: false,
     workflowOptions: {

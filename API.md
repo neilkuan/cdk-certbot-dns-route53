@@ -2,6 +2,45 @@
 
 ## Constructs <a name="Constructs"></a>
 
+### BashExecFunction <a name="cdk-certbot-dns-route53.BashExecFunction"></a>
+
+#### Initializers <a name="cdk-certbot-dns-route53.BashExecFunction.Initializer"></a>
+
+```typescript
+import { BashExecFunction } from 'cdk-certbot-dns-route53'
+
+new BashExecFunction(scope: Construct, id: string, props: BashExecFunctionProps)
+```
+
+##### `scope`<sup>Required</sup> <a name="cdk-certbot-dns-route53.BashExecFunction.parameter.scope"></a>
+
+- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
+
+---
+
+##### `id`<sup>Required</sup> <a name="cdk-certbot-dns-route53.BashExecFunction.parameter.id"></a>
+
+- *Type:* `string`
+
+---
+
+##### `props`<sup>Required</sup> <a name="cdk-certbot-dns-route53.BashExecFunction.parameter.props"></a>
+
+- *Type:* [`cdk-certbot-dns-route53.BashExecFunctionProps`](#cdk-certbot-dns-route53.BashExecFunctionProps)
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `handler`<sup>Required</sup> <a name="cdk-certbot-dns-route53.BashExecFunction.property.handler"></a>
+
+- *Type:* [`@aws-cdk/aws-lambda.DockerImageFunction`](#@aws-cdk/aws-lambda.DockerImageFunction)
+
+---
+
+
 ### CertbotDnsRoute53Job <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job"></a>
 
 #### Initializers <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job.Initializer"></a>
@@ -35,6 +74,60 @@ new CertbotDnsRoute53Job(scope: Construct, id: string, props: CertbotDnsRoute53J
 
 
 ## Structs <a name="Structs"></a>
+
+### BashExecFunctionProps <a name="cdk-certbot-dns-route53.BashExecFunctionProps"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { BashExecFunctionProps } from 'cdk-certbot-dns-route53'
+
+const bashExecFunctionProps: BashExecFunctionProps = { ... }
+```
+
+##### `script`<sup>Required</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.script"></a>
+
+- *Type:* `string`
+
+The path of the shell script to be executed.
+
+---
+
+##### `dockerfile`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.dockerfile"></a>
+
+- *Type:* `string`
+
+The path of your custom dockerfile.
+
+---
+
+##### `environment`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.environment"></a>
+
+- *Type:* {[ key: string ]: `string`}
+
+Lambda environment variables.
+
+---
+
+##### `role`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.role"></a>
+
+- *Type:* [`@aws-cdk/aws-iam.IRole`](#@aws-cdk/aws-iam.IRole)
+- *Default:* auto generated role.
+
+Custom lambda execution role.
+
+---
+
+##### `timeout`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.timeout"></a>
+
+- *Type:* [`@aws-cdk/core.Duration`](#@aws-cdk/core.Duration)
+- *Default:* Duration.seconds(60)
+
+The function execution time (in seconds) after which Lambda terminates the function.
+
+Because the execution time affects cost, set this value based on the function's expected execution time.
+
+---
 
 ### CertbotDnsRoute53JobProps <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps"></a>
 
