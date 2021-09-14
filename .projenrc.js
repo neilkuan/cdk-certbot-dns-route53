@@ -18,7 +18,6 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/aws-events',
     '@aws-cdk/aws-events-targets',
   ],
-  minNodeVersion: '14.15.0',
   depsUpgrade: DependenciesUpgradeMechanism.githubWorkflow({
     ignoreProjen: false,
     workflowOptions: {
