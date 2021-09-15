@@ -36,6 +36,10 @@ new BashExecFunction(scope: Construct, id: string, props: BashExecFunctionProps)
 
 ##### `handler`<sup>Required</sup> <a name="cdk-certbot-dns-route53.BashExecFunction.property.handler"></a>
 
+```typescript
+public readonly handler: DockerImageFunction;
+```
+
 - *Type:* [`@aws-cdk/aws-lambda.DockerImageFunction`](#@aws-cdk/aws-lambda.DockerImageFunction)
 
 ---
@@ -87,6 +91,10 @@ const bashExecFunctionProps: BashExecFunctionProps = { ... }
 
 ##### `script`<sup>Required</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.script"></a>
 
+```typescript
+public readonly script: string;
+```
+
 - *Type:* `string`
 
 The path of the shell script to be executed.
@@ -94,6 +102,10 @@ The path of the shell script to be executed.
 ---
 
 ##### `dockerfile`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.dockerfile"></a>
+
+```typescript
+public readonly dockerfile: string;
+```
 
 - *Type:* `string`
 
@@ -103,6 +115,10 @@ The path of your custom dockerfile.
 
 ##### `environment`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.environment"></a>
 
+```typescript
+public readonly environment: {[ key: string ]: string};
+```
+
 - *Type:* {[ key: string ]: `string`}
 
 Lambda environment variables.
@@ -110,6 +126,10 @@ Lambda environment variables.
 ---
 
 ##### `role`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.role"></a>
+
+```typescript
+public readonly role: IRole;
+```
 
 - *Type:* [`@aws-cdk/aws-iam.IRole`](#@aws-cdk/aws-iam.IRole)
 - *Default:* auto generated role.
@@ -119,6 +139,10 @@ Custom lambda execution role.
 ---
 
 ##### `timeout`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.timeout"></a>
+
+```typescript
+public readonly timeout: Duration;
+```
 
 - *Type:* [`@aws-cdk/core.Duration`](#@aws-cdk/core.Duration)
 - *Default:* Duration.seconds(60)
@@ -141,6 +165,10 @@ const certbotDnsRoute53JobProps: CertbotDnsRoute53JobProps = { ... }
 
 ##### `certbotOptions`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.certbotOptions"></a>
 
+```typescript
+public readonly certbotOptions: CertbotOptions;
+```
+
 - *Type:* [`cdk-certbot-dns-route53.CertbotOptions`](#cdk-certbot-dns-route53.CertbotOptions)
 
 certbot cmd options.
@@ -148,6 +176,10 @@ certbot cmd options.
 ---
 
 ##### `destinationBucket`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.destinationBucket"></a>
+
+```typescript
+public readonly destinationBucket: IBucket;
+```
 
 - *Type:* [`@aws-cdk/aws-s3.IBucket`](#@aws-cdk/aws-s3.IBucket)
 
@@ -157,6 +189,10 @@ The S3 bucket to store certificate.
 
 ##### `zone`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.zone"></a>
 
+```typescript
+public readonly zone: IHostedZone;
+```
+
 - *Type:* [`@aws-cdk/aws-route53.IHostedZone`](#@aws-cdk/aws-route53.IHostedZone)
 
 The HostZone on route53 to dns-01 challenge.
@@ -164,6 +200,10 @@ The HostZone on route53 to dns-01 challenge.
 ---
 
 ##### `schedule`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.schedule"></a>
+
+```typescript
+public readonly schedule: Schedule;
+```
 
 - *Type:* [`@aws-cdk/aws-events.Schedule`](#@aws-cdk/aws-events.Schedule)
 - *Default:* no shedule
@@ -184,6 +224,10 @@ const certbotOptions: CertbotOptions = { ... }
 
 ##### `domainName`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotOptions.property.domainName"></a>
 
+```typescript
+public readonly domainName: string;
+```
+
 - *Type:* `string`
 
 the domain must host on route53 like example.com.
@@ -191,6 +235,10 @@ the domain must host on route53 like example.com.
 ---
 
 ##### `email`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotOptions.property.email"></a>
+
+```typescript
+public readonly email: string;
+```
 
 - *Type:* `string`
 
