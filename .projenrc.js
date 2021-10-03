@@ -1,8 +1,8 @@
-const { AwsCdkConstructLibrary, DependenciesUpgradeMechanism } = require('projen');
+const { AwsCdkConstructLibrary } = require('projen');
 const project = new AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '1.122.0',
+  cdkVersion: '1.125.0',
   defaultReleaseBranch: 'main',
   name: 'cdk-certbot-dns-route53',
   repositoryUrl: 'https://github.com/neilkuan/cdk-certbot-dns-route53.git',
@@ -18,13 +18,13 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/aws-events',
     '@aws-cdk/aws-events-targets',
   ],
-  depsUpgrade: DependenciesUpgradeMechanism.githubWorkflow({
+  depsUpgradeOptions: {
     ignoreProjen: false,
     workflowOptions: {
       labels: ['auto-approve', 'auto-merge'],
       secret: 'PROJEN_GITHUB_TOKEN',
     },
-  }),
+  },
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['neilkuan'],
@@ -40,13 +40,11 @@ const project = new AwsCdkConstructLibrary({
   gitignore: [
     'cdk.context.json',
     'yarn-error.log',
-    'venv',
     'cdk.out',
   ],
   npmignore: [
     'cdk.context.json',
     'yarn-error.log',
-    'venv',
     'cdk.out',
     'images',
   ],
