@@ -117,3 +117,65 @@ test('create certbot lambda schedule rule.', () => {
     ],
   });
 });
+
+test('test right customPrefixDirectory.', () => {
+  const mockApp = new cdk.App();
+  const stack = new cdk.Stack(mockApp, 'teststack', { env: devEnv });
+  const bucket = new s3.Bucket(stack, 'testingBucket');
+  const zone = r53.HostedZone.fromHostedZoneAttributes(stack, 'zone', {
+    zoneName: mock.zoneName, hostedZoneId: mock.zoneId,
+  });
+  new CertbotDnsRoute53Job(stack, 'Testtask', {
+    certbotOptions: {
+      domainName: 'example.com',
+      email: 'user@example.com',
+      customPrefixDirectory: 'abc',
+    },
+    zone,
+    destinationBucket: bucket,
+    schedule: events.Schedule.cron({ month: '2' }),
+  });
+  expect(stack).toHaveResource('AWS::Lambda::Function', {
+    Environment: {
+      Variables: {
+        BUCKET_NAME: {
+          Ref: 'testingBucket9FA8E574',
+        },
+        EMAIL: 'user@example.com',
+        DOMAIN_NAME: 'example.com',
+        CUSTOM_PREFIX_DIRECTORY: 'abc',
+      },
+    },
+  });
+});
+
+test('test right / path customPrefixDirectory.', () => {
+  const mockApp = new cdk.App();
+  const stack = new cdk.Stack(mockApp, 'teststack', { env: devEnv });
+  const bucket = new s3.Bucket(stack, 'testingBucket');
+  const zone = r53.HostedZone.fromHostedZoneAttributes(stack, 'zone', {
+    zoneName: mock.zoneName, hostedZoneId: mock.zoneId,
+  });
+  new CertbotDnsRoute53Job(stack, 'Testtask', {
+    certbotOptions: {
+      domainName: 'example.com',
+      email: 'user@example.com',
+      customPrefixDirectory: '/',
+    },
+    zone,
+    destinationBucket: bucket,
+    schedule: events.Schedule.cron({ month: '2' }),
+  });
+  expect(stack).toHaveResource('AWS::Lambda::Function', {
+    Environment: {
+      Variables: {
+        BUCKET_NAME: {
+          Ref: 'testingBucket9FA8E574',
+        },
+        EMAIL: 'user@example.com',
+        DOMAIN_NAME: 'example.com',
+        CUSTOM_PREFIX_DIRECTORY: '/',
+      },
+    },
+  });
+});

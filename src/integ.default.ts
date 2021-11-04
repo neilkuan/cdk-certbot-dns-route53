@@ -16,6 +16,7 @@ new CertbotDnsRoute53Job(stack, 'Demo', {
   certbotOptions: {
     domainName: stack.node.tryGetContext('DOMAIN') ?? '*.example.com',
     email: stack.node.tryGetContext('EMAIL') ?? 'user@example.com',
+    customPrefixDirectory: '/',
   },
   zone: r53.HostedZone.fromHostedZoneAttributes(stack, 'myZone', {
     zoneName: stack.node.tryGetContext('ZONENAME') ?? 'example.com',
