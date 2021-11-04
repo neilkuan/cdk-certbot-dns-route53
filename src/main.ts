@@ -19,6 +19,16 @@ export interface CertbotOptions {
    * Email address for important account notifications.
    */
   readonly email: string;
+
+  /**
+   * Custom prefix directory on s3 bucket object path.
+   * @default - `s3://YOUR_BUCKET_NAME/2021-01-01/your.domain.name/`
+   *
+   * @example - customPrefixDirectory: '/' -> `s3://YOUR_BUCKET_NAME/your.domain.name/`
+   *
+   * @example - customPrefixDirectory: 'abc' -> `s3://YOUR_BUCKET_NAME/abc/your.domain.name/`
+   */
+  readonly customPrefixDirectory?: string;
 }
 
 export interface CertbotDnsRoute53JobProps {
@@ -48,14 +58,16 @@ export class CertbotDnsRoute53Job extends cdk.Construct {
   constructor(scope: cdk.Construct, id: string, props: CertbotDnsRoute53JobProps ) {
     super(scope, id);
     const certOptions = {
+      BUCKET_NAME: props.destinationBucket.bucketName,
       EMAIL: props.certbotOptions.email,
       DOMAIN_NAME: props.certbotOptions.domainName,
+      CUSTOM_PREFIX_DIRECTORY: props.certbotOptions.customPrefixDirectory!,
     };
+
     const lambdaFun = new BashExecFunction(this, 'certbotDnsRoute53JobLambda', {
       script: path.join(__dirname, '../docker.d/entrypoint.sh'),
       timeout: cdk.Duration.minutes(5),
       environment: {
-        BUCKET_NAME: props.destinationBucket.bucketName,
         ...certOptions,
       },
     });
