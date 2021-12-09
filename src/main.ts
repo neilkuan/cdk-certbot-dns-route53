@@ -1,10 +1,11 @@
 import * as path from 'path';
-import * as events from '@aws-cdk/aws-events';
-import * as target from '@aws-cdk/aws-events-targets';
-import * as iam from '@aws-cdk/aws-iam';
-import * as r53 from '@aws-cdk/aws-route53';
-import * as s3 from '@aws-cdk/aws-s3';
-import * as cdk from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
+import * as events from 'aws-cdk-lib/aws-events';
+import * as target from 'aws-cdk-lib/aws-events-targets';
+import * as iam from 'aws-cdk-lib/aws-iam';
+import * as r53 from 'aws-cdk-lib/aws-route53';
+import * as s3 from 'aws-cdk-lib/aws-s3';
+import { Construct } from 'constructs';
 import { BashExecFunction } from './lambda-bash';
 
 export interface CertbotOptions {
@@ -54,8 +55,8 @@ export interface CertbotDnsRoute53JobProps {
   readonly certbotOptions: CertbotOptions;
 }
 
-export class CertbotDnsRoute53Job extends cdk.Construct {
-  constructor(scope: cdk.Construct, id: string, props: CertbotDnsRoute53JobProps ) {
+export class CertbotDnsRoute53Job extends Construct {
+  constructor(scope: Construct, id: string, props: CertbotDnsRoute53JobProps ) {
     super(scope, id);
     const certOptions = {
       BUCKET_NAME: props.destinationBucket.bucketName,
