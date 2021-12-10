@@ -1,8 +1,8 @@
 import * as cdk from 'aws-cdk-lib';
+import * as assertions from 'aws-cdk-lib/assertions';
 import * as events from 'aws-cdk-lib/aws-events';
 import * as r53 from 'aws-cdk-lib/aws-route53';
 import * as s3 from 'aws-cdk-lib/aws-s3';
-import '@aws-cdk/assert/jest';
 import { CertbotDnsRoute53Job } from '../src/index';
 const devEnv = {
   account: '1234567890xx',
@@ -29,7 +29,7 @@ test('only create certbot lambda.', () => {
     zone,
     destinationBucket: bucket,
   });
-  expect(stack).toHaveResource('AWS::Lambda::Function', {
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
     Environment: {
       Variables: {
         BUCKET_NAME: {
@@ -40,8 +40,8 @@ test('only create certbot lambda.', () => {
       },
     },
   });
-  expect(stack).toHaveResource('AWS::IAM::Role');
-  expect(stack).toHaveResource('AWS::IAM::Policy', {
+  assertions.Template.fromStack(stack).findResources('AWS::IAM::Role');
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::IAM::Policy', {
     PolicyDocument: {
       Statement: [
         {
@@ -74,7 +74,7 @@ test('create certbot lambda schedule rule.', () => {
     destinationBucket: bucket,
     schedule: events.Schedule.cron({ month: '2' }),
   });
-  expect(stack).toHaveResource('AWS::Lambda::Function', {
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
     Environment: {
       Variables: {
         BUCKET_NAME: {
@@ -85,8 +85,8 @@ test('create certbot lambda schedule rule.', () => {
       },
     },
   });
-  expect(stack).toHaveResource('AWS::IAM::Role');
-  expect(stack).toHaveResource('AWS::IAM::Policy', {
+  assertions.Template.fromStack(stack).findResources('AWS::IAM::Role');
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::IAM::Policy', {
     PolicyDocument: {
       Statement: [
         {
@@ -101,7 +101,7 @@ test('create certbot lambda schedule rule.', () => {
       Version: '2012-10-17',
     },
   });
-  expect(stack).toHaveResource('AWS::Events::Rule', {
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Events::Rule', {
     ScheduleExpression: 'cron(* * * 2 ? *)',
     State: 'ENABLED',
     Targets: [
@@ -135,7 +135,7 @@ test('test right customPrefixDirectory.', () => {
     destinationBucket: bucket,
     schedule: events.Schedule.cron({ month: '2' }),
   });
-  expect(stack).toHaveResource('AWS::Lambda::Function', {
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
     Environment: {
       Variables: {
         BUCKET_NAME: {
@@ -166,7 +166,7 @@ test('test right / path customPrefixDirectory.', () => {
     destinationBucket: bucket,
     schedule: events.Schedule.cron({ month: '2' }),
   });
-  expect(stack).toHaveResource('AWS::Lambda::Function', {
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
     Environment: {
       Variables: {
         BUCKET_NAME: {

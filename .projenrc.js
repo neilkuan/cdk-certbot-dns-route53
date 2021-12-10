@@ -3,6 +3,17 @@ const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
   cdkVersion: '2.1.0',
+  /**
+   * we default release the main branch(cdkv2) with major version 2.
+   */
+  majorVersion: 2,
+  defaultReleaseBranch: 'main',
+  /**
+    * we also release the cdkv1 branch with major version 1.
+    */
+  releaseBranches: {
+    cdkv1: { npmDistTag: 'cdkv1', majorVersion: 1 },
+  },
   defaultReleaseBranch: 'main',
   name: 'cdk-certbot-dns-route53',
   repositoryUrl: 'https://github.com/neilkuan/cdk-certbot-dns-route53.git',

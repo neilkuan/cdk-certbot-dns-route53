@@ -5,14 +5,24 @@
 # cdk-certbot-dns-route53 
 **cdk-certbot-dns-route53** is a CDK construct library that allows you to create [Certbot](https://github.com/certbot/certbot) Lambda Function on AWS with CDK, and setting schedule cron job to renew certificate to store on S3 Bucket.
 
-## !!! Usage Note !!!
-cdk-certbot-dns-route53 before version: `0.3.144`, support aws-cdk version: `1.xxx.xxx`.
+## Install
+```bash
+Use the npm dist tag to opt in CDKv1 or CDKv2:
 
-cdk-certbot-dns-route53 start at version: `2.x.x`, support aws-cdk version: `2.xxx.xxx`.
+// for CDKv2
+npm install cdk-certbot-dns-route53
+or
+npm install cdk-certbot-dns-route53@latest
+
+// for CDKv1
+npm install cdk-certbot-dns-route53@cdkv1
+```
+
+💡💡💡 please click [here](https://github.com/neilkuan/cdk-certbot-dns-route53/tree/cdkv1#readme), if you are using aws-cdk v1.x.x version.💡💡💡
 
 ```ts
 import * as r53 from 'aws-cdk-lib/aws-route53';
-import * as s3 from 'aws-cdk-libaws-s3';
+import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as cdk from 'aws-cdk-lib';
 import { CertbotDnsRoute53Job } from 'cdk-certbot-dns-route53';
 
