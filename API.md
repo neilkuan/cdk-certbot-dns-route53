@@ -14,7 +14,7 @@ new BashExecFunction(scope: Construct, id: string, props: BashExecFunctionProps)
 
 ##### `scope`<sup>Required</sup> <a name="cdk-certbot-dns-route53.BashExecFunction.parameter.scope"></a>
 
-- *Type:* [`constructs.Construct`](#constructs.Construct)
+- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
 
 ---
 
@@ -40,7 +40,7 @@ new BashExecFunction(scope: Construct, id: string, props: BashExecFunctionProps)
 public readonly handler: DockerImageFunction;
 ```
 
-- *Type:* [`aws-cdk-lib.aws_lambda.DockerImageFunction`](#aws-cdk-lib.aws_lambda.DockerImageFunction)
+- *Type:* [`@aws-cdk/aws-lambda.DockerImageFunction`](#@aws-cdk/aws-lambda.DockerImageFunction)
 
 ---
 
@@ -57,7 +57,7 @@ new CertbotDnsRoute53Job(scope: Construct, id: string, props: CertbotDnsRoute53J
 
 ##### `scope`<sup>Required</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53Job.parameter.scope"></a>
 
-- *Type:* [`constructs.Construct`](#constructs.Construct)
+- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
 
 ---
 
@@ -131,7 +131,7 @@ Lambda environment variables.
 public readonly role: IRole;
 ```
 
-- *Type:* [`aws-cdk-lib.aws_iam.IRole`](#aws-cdk-lib.aws_iam.IRole)
+- *Type:* [`@aws-cdk/aws-iam.IRole`](#@aws-cdk/aws-iam.IRole)
 - *Default:* auto generated role.
 
 Custom lambda execution role.
@@ -144,7 +144,7 @@ Custom lambda execution role.
 public readonly timeout: Duration;
 ```
 
-- *Type:* [`aws-cdk-lib.Duration`](#aws-cdk-lib.Duration)
+- *Type:* [`@aws-cdk/core.Duration`](#@aws-cdk/core.Duration)
 - *Default:* Duration.seconds(60)
 
 The function execution time (in seconds) after which Lambda terminates the function.
@@ -181,7 +181,7 @@ certbot cmd options.
 public readonly destinationBucket: IBucket;
 ```
 
-- *Type:* [`aws-cdk-lib.aws_s3.IBucket`](#aws-cdk-lib.aws_s3.IBucket)
+- *Type:* [`@aws-cdk/aws-s3.IBucket`](#@aws-cdk/aws-s3.IBucket)
 
 The S3 bucket to store certificate.
 
@@ -193,7 +193,7 @@ The S3 bucket to store certificate.
 public readonly zone: IHostedZone;
 ```
 
-- *Type:* [`aws-cdk-lib.aws_route53.IHostedZone`](#aws-cdk-lib.aws_route53.IHostedZone)
+- *Type:* [`@aws-cdk/aws-route53.IHostedZone`](#@aws-cdk/aws-route53.IHostedZone)
 
 The HostZone on route53 to dns-01 challenge.
 
@@ -205,7 +205,7 @@ The HostZone on route53 to dns-01 challenge.
 public readonly schedule: Schedule;
 ```
 
-- *Type:* [`aws-cdk-lib.aws_events.Schedule`](#aws-cdk-lib.aws_events.Schedule)
+- *Type:* [`@aws-cdk/aws-events.Schedule`](#@aws-cdk/aws-events.Schedule)
 - *Default:* no shedule
 
 run the Job with defined schedule.

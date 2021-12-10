@@ -18,12 +18,10 @@ npm install cdk-certbot-dns-route53@latest
 npm install cdk-certbot-dns-route53@cdkv1
 ```
 
-💡💡💡 please click [here](https://github.com/neilkuan/cdk-certbot-dns-route53/tree/cdkv1#readme), if you are using aws-cdk v1.x.x version.💡💡💡
-
 ```ts
-import * as r53 from 'aws-cdk-lib/aws-route53';
-import * as s3 from 'aws-cdk-lib/aws-s3';
-import * as cdk from 'aws-cdk-lib';
+import * as r53 from '@aws-cdk/aws-route53';
+import * as s3 from '@aws-cdk/aws-s3';
+import * as cdk from '@aws-cdk/core';
 import { CertbotDnsRoute53Job } from 'cdk-certbot-dns-route53';
 
 const devEnv = {

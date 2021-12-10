@@ -1,10 +1,9 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { CfnOutput, Duration } from 'aws-cdk-lib';
-import * as iam from 'aws-cdk-lib/aws-iam';
-import * as lambda from 'aws-cdk-lib/aws-lambda';
-import * as logs from 'aws-cdk-lib/aws-logs';
-import { Construct } from 'constructs';
+import * as iam from '@aws-cdk/aws-iam';
+import * as lambda from '@aws-cdk/aws-lambda';
+import * as logs from '@aws-cdk/aws-logs';
+import { CfnOutput, Duration, Construct } from '@aws-cdk/core';
 
 export interface BashExecFunctionProps {
   /**

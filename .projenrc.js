@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '2.1.0',
+  cdkVersion: '1.134.0',
   /**
    * we default release the main branch(cdkv2) with major version 2.
    */
@@ -49,8 +49,23 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'cdk.out',
     'images',
   ],
-  bundledDeps: [
-    '@aws-cdk/assert',
+  deps: [
+    '@aws-cdk/core@^1.134.0',
+    '@aws-cdk/aws-iam@^1.134.0',
+    '@aws-cdk/aws-logs@^1.134.0',
+    '@aws-cdk/aws-s3@^1.134.0',
+    '@aws-cdk/aws-route53@^1.134.0',
+    '@aws-cdk/aws-events@^1.134.0',
+    '@aws-cdk/aws-lambda@^1.134.0',
+    '@aws-cdk/aws-events-targets@^1.134.0',
+  ],
+  peerDeps: [
+    '@aws-cdk/aws-iam@^1.134.0',
+    '@aws-cdk/aws-s3@^1.134.0',
+    '@aws-cdk/aws-route53@^1.134.0',
+    '@aws-cdk/core@^1.134.0',
+    '@aws-cdk/aws-lambda@^1.134.0',
+    '@aws-cdk/aws-events@^1.134.0',
   ],
   workflowNodeVersion: '^14.17.0',
 });

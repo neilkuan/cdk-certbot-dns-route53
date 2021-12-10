@@ -1,8 +1,8 @@
-import * as cdk from 'aws-cdk-lib';
-import * as assertions from 'aws-cdk-lib/assertions';
-import * as events from 'aws-cdk-lib/aws-events';
-import * as r53 from 'aws-cdk-lib/aws-route53';
-import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as assertions from '@aws-cdk/assertions';
+import * as events from '@aws-cdk/aws-events';
+import * as r53 from '@aws-cdk/aws-route53';
+import * as s3 from '@aws-cdk/aws-s3';
+import * as cdk from '@aws-cdk/core';
 import { CertbotDnsRoute53Job } from '../src/index';
 const devEnv = {
   account: '1234567890xx',

@@ -33,12 +33,11 @@
     "organization": false
   },
   "devDependencies": {
+    "@aws-cdk/assertions": "^1.134.0",
     "@types/jest": "^27.0.3",
     "@types/node": "^14.17.0",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.1.0",
-    "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.5.0",
@@ -57,15 +56,25 @@
     "typescript": "^4.5.3"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
-    "constructs": "^10.0.5"
+    "@aws-cdk/aws-events": "^1.134.0",
+    "@aws-cdk/aws-iam": "^1.134.0",
+    "@aws-cdk/aws-lambda": "^1.134.0",
+    "@aws-cdk/aws-route53": "^1.134.0",
+    "@aws-cdk/aws-s3": "^1.134.0",
+    "@aws-cdk/core": "^1.134.0",
+    "constructs": "^3.2.27"
   },
   "dependencies": {
-    "@aws-cdk/assert": "^2.1.0"
+    "@aws-cdk/aws-events": "^1.134.0",
+    "@aws-cdk/aws-events-targets": "^1.134.0",
+    "@aws-cdk/aws-iam": "^1.134.0",
+    "@aws-cdk/aws-lambda": "^1.134.0",
+    "@aws-cdk/aws-logs": "^1.134.0",
+    "@aws-cdk/aws-route53": "^1.134.0",
+    "@aws-cdk/aws-s3": "^1.134.0",
+    "@aws-cdk/core": "^1.134.0"
   },
-  "bundledDependencies": [
-    "@aws-cdk/assert"
-  ],
+  "bundledDependencies": [],
   "keywords": [
     "aws",
     "cdk",
