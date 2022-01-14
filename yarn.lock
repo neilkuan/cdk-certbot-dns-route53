@@ -2,27 +2,27 @@
 # yarn lockfile v1
 
 
-"@aws-cdk/assert@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/assert/-/assert-2.7.0.tgz#a8ef33a2164a598e01f37d81057d7d666e20630f"
-  integrity sha512-0d0yts1v6OD6/HFruRvspY8GQ7Tl6heNXEcqeTKYQfeiYJLOkGTIcrbSHximb36vjCTqburEXvla7AFG62zgig==
+"@aws-cdk/assert@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/assert/-/assert-2.8.0.tgz#c9248188ef1eb1e6ac15a81985f99f3f77ecd685"
+  integrity sha512-NSSPMs2hXn42x7qWPhNCIg+CUAgqNZNuvU9v/EJo+xENADc+bm2X2y0RNJOjS5jcvMiy2AHtwT9Gj3uHd0S/IQ==
   dependencies:
-    "@aws-cdk/cloudformation-diff" "2.7.0"
+    "@aws-cdk/cloudformation-diff" "2.8.0"
 
-"@aws-cdk/cfnspec@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cfnspec/-/cfnspec-2.7.0.tgz#0bd5937b805ad3335189340a90803617a9900e7f"
-  integrity sha512-RZbQLtTYZzC/DZkdW8Kla/9dI+UMgIrzAoEXhgTU9U0lVjXQ/3bdmmwSgC1bi3ckRRGJAL3+UBqoj2SAWh9ypg==
+"@aws-cdk/cfnspec@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cfnspec/-/cfnspec-2.8.0.tgz#9a33195bd16af86bf8654f7e085a4995bfb7dfc9"
+  integrity sha512-MLaTOu8IBRdaosXyAZF1xpubIeAPiNKtII7bw8JKOb07/HVUmdnNCStjPZCsPP5yQ4/OO2Qg2rPhPqocufpWlQ==
   dependencies:
     fs-extra "^9.1.0"
     md5 "^2.3.0"
 
-"@aws-cdk/cloudformation-diff@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloudformation-diff/-/cloudformation-diff-2.7.0.tgz#60c6c2711dc679e7f436f3ccdc389c081078d580"
-  integrity sha512-2bu2+13K6rsGwV0T3W+sTQzw0MgYcvVvB7SYqRSIhDJ+1ylZby7+0IApAn+XuIUr6+1KmcedvNku7LEiUWV8DA==
+"@aws-cdk/cloudformation-diff@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloudformation-diff/-/cloudformation-diff-2.8.0.tgz#410366d5d4c8b47596a0757dd7390ca0894a71f3"
+  integrity sha512-9Z1b1oFBjP4r1dNgWaJF9Hg0+ND1OIsw6BWacFS7V016ZT055FttYD5bbaqlE09ZdjReDaDw6UHbE9s+IhD9sA==
   dependencies:
-    "@aws-cdk/cfnspec" "2.7.0"
+    "@aws-cdk/cfnspec" "2.8.0"
     "@types/node" "^10.17.60"
     chalk "^4"
     diff "^5.0.0"
@@ -2024,9 +2024,9 @@ duplexer3@^0.1.4:
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
 electron-to-chromium@^1.4.17:
-  version "1.4.44"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.44.tgz#8a41923afdd6ef5ddabe001626036ba5d1d64ae6"
-  integrity sha512-tHGWiUUmY7GABK8+DNcr474cnZDTzD8x1736SlDosVH8+/vRJeqfaIBAEHFtMjddz/0T4rKKYsxEc8BwQRdBpw==
+  version "1.4.45"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.45.tgz#cf1144091d6683cbd45a231954a745f02fb24598"
+  integrity sha512-czF9eYVuOmlY/vxyMQz2rGlNSjZpxNQYBe1gmQv7al171qOIhgyO9k7D5AKlgeTCSPKk+LHhj5ZyIdmEub9oNg==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -4837,10 +4837,10 @@ progress@^2.0.0, progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.50.28:
-  version "0.50.28"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.50.28.tgz#d7453cd4054b2c948aa52f48ff5ab6577d53e4bd"
-  integrity sha512-qkmmpJNMULl8EeO7WxMdLyUgfj/L52ojtwozXtFhjBpGxY1Et8cahUmdIBCjfw+Jrlre/4/oDCMLS+1WCCHMUg==
+projen@^0.50.30:
+  version "0.50.30"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.50.30.tgz#d88ac5d7b87356313a6444a7a328143b2ac7e6e4"
+  integrity sha512-Zy3iF0StO0QicU7Ya0f3mIYTTodLW9kRIo4spYDOO6+a4whXbhTr91QnObo24NycXR7ZapMG7duC1zm6y3TORg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -5023,9 +5023,9 @@ redent@^3.0.0:
     strip-indent "^3.0.0"
 
 regexp.prototype.flags@^1.3.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/regexp.prototype.flags/-/regexp.prototype.flags-1.3.1.tgz#7ef352ae8d159e758c0eadca6f8fcb4eef07be26"
-  integrity sha512-JiBdRBq91WlY7uRJ0ds7R+dU02i6LKi8r3BuQhNXn+kmeLN+EfHhfjqMRis1zJxnlu88hq/4dx0P2OP3APRTOA==
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/regexp.prototype.flags/-/regexp.prototype.flags-1.3.2.tgz#ea664a0cf7fecf6bf811a84a06ba88c52b38a5a6"
+  integrity sha512-uaro52GSI5be7+ssxjxxnLlleDBN3VHIWQHvBhfeeSXRQkuV/0Jo/hBU+omYH6NUkM+LYpTHnRRf2W/v+x7LzQ==
   dependencies:
     call-bind "^1.0.2"
     define-properties "^1.1.3"
