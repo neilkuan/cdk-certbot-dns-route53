@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '2.1.0',
+  cdkVersion: '2.12.0',
   /**
    * we default release the main branch(cdkv2) with major version 2.
    */
@@ -47,9 +47,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'yarn-error.log',
     'cdk.out',
     'images',
-  ],
-  bundledDeps: [
-    '@aws-cdk/assert',
   ],
   workflowNodeVersion: '^14.17.0',
 });
