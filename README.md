@@ -2,6 +2,10 @@
 [![PyPI version](https://badge.fury.io/py/cdk-certbot-dns-route53.svg)](https://badge.fury.io/py/cdk-certbot-dns-route53)
 [![Release](https://github.com/neilkuan/cdk-certbot-dns-route53/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/neilkuan/cdk-certbot-dns-route53/actions/workflows/release.yml)
 
+![Downloads](https://img.shields.io/badge/-DOWNLOADS:-brightgreen?color=gray)
+![npm](https://img.shields.io/npm/dt/cdk-certbot-dns-route53?label=npm&color=orange)
+![PyPI](https://img.shields.io/pypi/dm/cdk-certbot-dns-route53?label=pypi&color=blue)
+
 # cdk-certbot-dns-route53 
 **cdk-certbot-dns-route53** is a CDK construct library that allows you to create [Certbot](https://github.com/certbot/certbot) Lambda Function on AWS with CDK, and setting schedule cron job to renew certificate to store on S3 Bucket.
 
