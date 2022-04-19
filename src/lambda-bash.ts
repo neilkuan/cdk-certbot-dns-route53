@@ -35,6 +35,13 @@ export interface BashExecFunctionProps {
    * @default - auto generated role.
    */
   readonly role?: iam.IRole;
+
+  /**
+   * Custom lambda Image Architecture.
+   *
+   * @default - lambda.Architecture.X86_64
+   */
+  readonly architecture?: lambda.Architecture;
 }
 
 export class BashExecFunction extends Construct {
@@ -56,6 +63,7 @@ export class BashExecFunction extends Construct {
       logRetention: logs.RetentionDays.ONE_DAY,
       environment: props.environment,
       role: props.role,
+      architecture: props.architecture ?? lambda.Architecture.X86_64,
     });
     new CfnOutput(this, 'LogGroup', { value: this.handler.logGroup.logGroupName });
   }
