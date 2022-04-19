@@ -101,6 +101,19 @@ The path of the shell script to be executed.
 
 ---
 
+##### `architecture`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.architecture"></a>
+
+```typescript
+public readonly architecture: Architecture;
+```
+
+- *Type:* [`aws-cdk-lib.aws_lambda.Architecture`](#aws-cdk-lib.aws_lambda.Architecture)
+- *Default:* lambda.Architecture.X86_64
+
+Custom lambda Image Architecture.
+
+---
+
 ##### `dockerfile`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.BashExecFunctionProps.property.dockerfile"></a>
 
 ```typescript
@@ -196,6 +209,19 @@ public readonly zone: IHostedZone;
 - *Type:* [`aws-cdk-lib.aws_route53.IHostedZone`](#aws-cdk-lib.aws_route53.IHostedZone)
 
 The HostZone on route53 to dns-01 challenge.
+
+---
+
+##### `architecture`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.architecture"></a>
+
+```typescript
+public readonly architecture: Architecture;
+```
+
+- *Type:* [`aws-cdk-lib.aws_lambda.Architecture`](#aws-cdk-lib.aws_lambda.Architecture)
+- *Default:* lambda.Architecture.X86_64
+
+Custom lambda Image Architecture.
 
 ---
 
