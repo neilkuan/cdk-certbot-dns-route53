@@ -1,5 +1,6 @@
 import * as assertions from '@aws-cdk/assertions';
 import * as events from '@aws-cdk/aws-events';
+import * as lambda from '@aws-cdk/aws-lambda';
 import * as r53 from '@aws-cdk/aws-route53';
 import * as s3 from '@aws-cdk/aws-s3';
 import * as cdk from '@aws-cdk/core';
@@ -167,6 +168,76 @@ test('test right / path customPrefixDirectory.', () => {
     schedule: events.Schedule.cron({ month: '2' }),
   });
   assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
+    Environment: {
+      Variables: {
+        BUCKET_NAME: {
+          Ref: 'testingBucket9FA8E574',
+        },
+        EMAIL: 'user@example.com',
+        DOMAIN_NAME: 'example.com',
+        CUSTOM_PREFIX_DIRECTORY: '/',
+      },
+    },
+  });
+});
+
+test('test define right Lambda Image Architecture x86_64', () => {
+  const mockApp = new cdk.App();
+  const stack = new cdk.Stack(mockApp, 'teststack', { env: devEnv });
+  const bucket = new s3.Bucket(stack, 'testingBucket');
+  const zone = r53.HostedZone.fromHostedZoneAttributes(stack, 'zone', {
+    zoneName: mock.zoneName, hostedZoneId: mock.zoneId,
+  });
+  new CertbotDnsRoute53Job(stack, 'Testtask', {
+    certbotOptions: {
+      domainName: 'example.com',
+      email: 'user@example.com',
+      customPrefixDirectory: '/',
+    },
+    zone,
+    destinationBucket: bucket,
+    schedule: events.Schedule.cron({ month: '2' }),
+    architecture: lambda.Architecture.X86_64,
+  });
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
+    Architectures: [
+      'x86_64',
+    ],
+    Environment: {
+      Variables: {
+        BUCKET_NAME: {
+          Ref: 'testingBucket9FA8E574',
+        },
+        EMAIL: 'user@example.com',
+        DOMAIN_NAME: 'example.com',
+        CUSTOM_PREFIX_DIRECTORY: '/',
+      },
+    },
+  });
+});
+
+test('test define right Lambda Image Architecture arm64', () => {
+  const mockApp = new cdk.App();
+  const stack = new cdk.Stack(mockApp, 'teststack', { env: devEnv });
+  const bucket = new s3.Bucket(stack, 'testingBucket');
+  const zone = r53.HostedZone.fromHostedZoneAttributes(stack, 'zone', {
+    zoneName: mock.zoneName, hostedZoneId: mock.zoneId,
+  });
+  new CertbotDnsRoute53Job(stack, 'Testtask', {
+    certbotOptions: {
+      domainName: 'example.com',
+      email: 'user@example.com',
+      customPrefixDirectory: '/',
+    },
+    zone,
+    destinationBucket: bucket,
+    schedule: events.Schedule.cron({ month: '2' }),
+    architecture: lambda.Architecture.ARM_64,
+  });
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
+    Architectures: [
+      'arm64',
+    ],
     Environment: {
       Variables: {
         BUCKET_NAME: {

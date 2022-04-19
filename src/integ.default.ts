@@ -1,3 +1,4 @@
+import * as lambda from '@aws-cdk/aws-lambda';
 import * as r53 from '@aws-cdk/aws-route53';
 import * as s3 from '@aws-cdk/aws-s3';
 import * as cdk from '@aws-cdk/core';
@@ -23,6 +24,7 @@ new CertbotDnsRoute53Job(stack, 'Demo', {
     hostedZoneId: stack.node.tryGetContext('HOSTZONEID') ?? 'mockId',
   }),
   destinationBucket: s3.Bucket.fromBucketName(stack, 'myBucket', stack.node.tryGetContext('BUCKETNAME') ?? 'mybucket'),
+  architecture: lambda.Architecture.X86_64,
 });
 
 

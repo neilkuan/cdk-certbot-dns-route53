@@ -2,6 +2,7 @@ import * as path from 'path';
 import * as events from '@aws-cdk/aws-events';
 import * as target from '@aws-cdk/aws-events-targets';
 import * as iam from '@aws-cdk/aws-iam';
+import * as lambda from '@aws-cdk/aws-lambda';
 import * as r53 from '@aws-cdk/aws-route53';
 import * as s3 from '@aws-cdk/aws-s3';
 import * as cdk from '@aws-cdk/core';
@@ -52,6 +53,13 @@ export interface CertbotDnsRoute53JobProps {
    * certbot cmd options.
    */
   readonly certbotOptions: CertbotOptions;
+
+  /**
+   * Custom lambda Image Architecture.
+   *
+   * @default - lambda.Architecture.X86_64
+   */
+  readonly architecture?: lambda.Architecture;
 }
 
 export class CertbotDnsRoute53Job extends cdk.Construct {
@@ -67,6 +75,7 @@ export class CertbotDnsRoute53Job extends cdk.Construct {
     const lambdaFun = new BashExecFunction(this, 'certbotDnsRoute53JobLambda', {
       script: path.join(__dirname, '../docker.d/entrypoint.sh'),
       timeout: cdk.Duration.minutes(5),
+      architecture: props.architecture ?? lambda.Architecture.X86_64,
       environment: {
         ...certOptions,
       },
@@ -109,3 +118,4 @@ export class CertbotDnsRoute53Job extends cdk.Construct {
     }
   }
 }
+

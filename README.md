@@ -38,11 +38,37 @@ new CertbotDnsRoute53Job(stack, 'Demo', {
     domainName: '*.example.com',
     email: 'user@example.com',
   },
-  zone: r53.HostedZone.fromHostedZoneAttributes(stack, 'myZone', {｀
+  zone: r53.HostedZone.fromHostedZoneAttributes(stack, 'myZone', {
     zoneName: 'example.com',
     hostedZoneId:  'mockId',
   }),
   destinationBucket: s3.Bucket.fromBucketName(stack, 'myBucket', 'mybucket'),
+});
+
+```
+### You can define Lambda Image Architecture now. 2022/04/19
+```ts
+import * as r53 from '@aws-cdk/aws-route53';
+import * as s3 from '@aws-cdk/aws-s3';
+import * as cdk from '@aws-cdk/core';
+import * as lambda from '@aws-cdk/aws-lambda';
+import { CertbotDnsRoute53Job } from 'cdk-certbot-dns-route53';
+const mockApp = new cdk.App();
+const stack = new cdk.Stack(mockApp, 'teststack', { env: devEnv });
+const bucket = new s3.Bucket(stack, 'testingBucket');
+const zone = r53.HostedZone.fromHostedZoneAttributes(stack, 'zone', {
+  zoneName: mock.zoneName, hostedZoneId: mock.zoneId,
+});
+new CertbotDnsRoute53Job(stack, 'Testtask', {
+  certbotOptions: {
+    domainName: 'example.com',
+    email: 'user@example.com',
+    customPrefixDirectory: '/',
+  },
+  zone,
+  destinationBucket: bucket,
+  schedule: events.Schedule.cron({ month: '2' }),
+  architecture: lambda.Architecture.ARM_64, // <- like this way.
 });
 ```
 
