@@ -49,5 +49,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'images',
   ],
   workflowNodeVersion: '^14.17.0',
+  typescriptVersion: '3.9.10',
+});
+project.package.addField('resolutions', {
+  got: '12.3.0',
 });
 project.synth();
