@@ -67,5 +67,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@aws-cdk/aws-events@^1.134.0',
   ],
   workflowNodeVersion: '^14.17.0',
+  typescriptVersion: '3.9.10',
+});
+project.package.addField('resolutions', {
+  got: '12.3.0',
 });
 project.synth();
