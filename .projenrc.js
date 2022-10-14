@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '1.134.0',
+  cdkVersion: '1.176.0',
   /**
    * we default release the main branch(cdkv2) with major version 2.
    */
@@ -49,25 +49,25 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'images',
   ],
   deps: [
-    '@aws-cdk/core@^1.134.0',
-    '@aws-cdk/aws-iam@^1.134.0',
-    '@aws-cdk/aws-logs@^1.134.0',
-    '@aws-cdk/aws-s3@^1.134.0',
-    '@aws-cdk/aws-route53@^1.134.0',
-    '@aws-cdk/aws-events@^1.134.0',
-    '@aws-cdk/aws-lambda@^1.134.0',
-    '@aws-cdk/aws-events-targets@^1.134.0',
+    '@aws-cdk/core@^1.76.0',
+    '@aws-cdk/aws-iam@^1.76.0',
+    '@aws-cdk/aws-logs@^1.76.0',
+    '@aws-cdk/aws-s3@^1.76.0',
+    '@aws-cdk/aws-route53@^1.76.0',
+    '@aws-cdk/aws-events@^1.76.0',
+    '@aws-cdk/aws-lambda@^1.76.0',
+    '@aws-cdk/aws-events-targets@^1.76.0',
   ],
   peerDeps: [
-    '@aws-cdk/aws-iam@^1.134.0',
-    '@aws-cdk/aws-s3@^1.134.0',
-    '@aws-cdk/aws-route53@^1.134.0',
-    '@aws-cdk/core@^1.134.0',
-    '@aws-cdk/aws-lambda@^1.134.0',
-    '@aws-cdk/aws-events@^1.134.0',
+    '@aws-cdk/aws-iam@^1.76.0',
+    '@aws-cdk/aws-s3@^1.76.0',
+    '@aws-cdk/aws-route53@^1.76.0',
+    '@aws-cdk/core@^1.76.0',
+    '@aws-cdk/aws-lambda@^1.76.0',
+    '@aws-cdk/aws-events@^1.76.0',
   ],
-  workflowNodeVersion: '^14.17.0',
-  typescriptVersion: '3.9.10',
+  workflowNodeVersion: '^16',
+  typescriptVersion: '3.8',
 });
 project.package.addField('resolutions', {
   got: '12.3.0',
