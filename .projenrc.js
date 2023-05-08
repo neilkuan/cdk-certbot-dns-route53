@@ -66,7 +66,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@aws-cdk/aws-lambda@^1.76.0',
     '@aws-cdk/aws-events@^1.76.0',
   ],
-  workflowNodeVersion: '^16',
+  workflowNodeVersion: '^16.20.0',
   typescriptVersion: '^4.9',
 });
 project.synth();
