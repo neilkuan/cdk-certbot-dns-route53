@@ -48,7 +48,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'cdk.out',
     'images',
   ],
-  workflowNodeVersion: '^14.17.0',
+  workflowNodeVersion: '^16.20.0',
   typescriptVersion: '^4.9',
 });
 project.synth();
