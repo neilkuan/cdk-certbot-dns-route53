@@ -5,7 +5,6 @@ MAIL=$EMAIL
 echo "start to renew cert from route53"
 certbot certonly --agree-tos \
 --dns-route53 \
---dns-route53-propagation-seconds 30 \
 -d ${DOMAIN_NAME} -m ${MAIL} --no-eff-email --config-dir /tmp --work-dir /tmp --logs-dir /tmp
 sleep 30
 TODAY=$(date +"%Y-%m-%d")
