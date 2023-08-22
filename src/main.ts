@@ -41,6 +41,12 @@ export interface CertbotDnsRoute53JobProps {
   readonly schedule?: events.Schedule;
 
   /**
+   * run the Job with defined schedule
+   * @default - no shedule
+   */
+  readonly partition?: "aws" | "aws-us-gov" | "aws-cn";
+
+  /**
    * The S3 bucket to store certificate.
    */
   readonly destinationBucket: s3.IBucket;
@@ -99,7 +105,7 @@ export class CertbotDnsRoute53Job extends Construct {
         'route53:ChangeResourceRecordSets',
       ],
       Resource: [
-        `arn:aws:route53:::hostedzone/${props.zone.hostedZoneId}`,
+        `arn:${props.partition ? props.partition : "aws"}:route53:::hostedzone/${props.zone.hostedZoneId}`,
       ],
     }];
     route53PolicyJsonList.forEach(
