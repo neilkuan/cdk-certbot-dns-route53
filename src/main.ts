@@ -98,7 +98,7 @@ export class CertbotDnsRoute53Job extends cdk.Construct {
         'route53:ChangeResourceRecordSets',
       ],
       Resource: [
-        `arn:aws:route53:::hostedzone/${props.zone.hostedZoneId}`,
+        `arn:${new cdk.ScopedAws(this).partition}:route53:::hostedzone/${props.zone.hostedZoneId}`,
       ],
     }];
     route53PolicyJsonList.forEach(
