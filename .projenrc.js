@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '2.12.0',
+  cdkVersion: '2.110.0',
   /**
    * we default release the main branch(cdkv2) with major version 2.
    */

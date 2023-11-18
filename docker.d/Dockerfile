@@ -1,6 +1,6 @@
-FROM public.ecr.aws/lambda/provided:al2
+FROM public.ecr.aws/lambda/python:3.11
 
-RUN yum install python3-pip -y && pip3 install certbot-dns-route53 awscli
+RUN pip3 install certbot-dns-route53 awscli
 
 COPY bootstrap /var/runtime/bootstrap
 COPY function.sh /var/task/function.sh
