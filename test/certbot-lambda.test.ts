@@ -250,3 +250,70 @@ test('test define right Lambda Image Architecture arm64', () => {
     },
   });
 });
+
+test('test enabled LambdaFunctionUrl', () => {
+  const mockApp = new cdk.App();
+  const stack = new cdk.Stack(mockApp, 'teststack', { env: devEnv });
+  const bucket = new s3.Bucket(stack, 'testingBucket');
+  const zone = r53.HostedZone.fromHostedZoneAttributes(stack, 'zone', {
+    zoneName: mock.zoneName, hostedZoneId: mock.zoneId,
+  });
+  new CertbotDnsRoute53Job(stack, 'Testtask', {
+    certbotOptions: {
+      domainName: 'example.com',
+      email: 'user@example.com',
+      customPrefixDirectory: '/',
+    },
+    zone,
+    destinationBucket: bucket,
+    schedule: events.Schedule.cron({ month: '2' }),
+    architecture: lambda.Architecture.ARM_64,
+    enabledLambdaFunctionUrl: true,
+    functionUrlOptions: {
+      authType: lambda.FunctionUrlAuthType.AWS_IAM,
+    },
+  });
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
+    Architectures: [
+      'arm64',
+    ],
+    Environment: {
+      Variables: {
+        BUCKET_NAME: {
+          Ref: 'testingBucket9FA8E574',
+        },
+        EMAIL: 'user@example.com',
+        DOMAIN_NAME: 'example.com',
+        CUSTOM_PREFIX_DIRECTORY: '/',
+      },
+    },
+  });
+
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
+    Architectures: [
+      'arm64',
+    ],
+    Environment: {
+      Variables: {
+        BUCKET_NAME: {
+          Ref: 'testingBucket9FA8E574',
+        },
+        EMAIL: 'user@example.com',
+        DOMAIN_NAME: 'example.com',
+        CUSTOM_PREFIX_DIRECTORY: '/',
+      },
+    },
+  });
+
+
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Url', {
+    AuthType: 'AWS_IAM',
+    TargetFunctionArn: {
+      'Fn::GetAtt': [
+        'TesttaskcertbotDnsRoute53JobLambdaBashExecFunction83E58B7B',
+        'Arn',
+      ],
+    },
+  });
+
+});
