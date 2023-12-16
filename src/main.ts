@@ -36,7 +36,7 @@ export interface CertbotOptions {
 export interface CertbotDnsRoute53JobProps {
   /**
    * run the Job with defined schedule
-   * @default - no shedule
+   * @default - no schedule
    */
   readonly schedule?: events.Schedule;
 
@@ -61,6 +61,18 @@ export interface CertbotDnsRoute53JobProps {
    * @default - lambda.Architecture.X86_64
    */
   readonly architecture?: lambda.Architecture;
+
+  /**
+   * Enabled Lambda Function URL
+   * @default - false
+   */
+  readonly enabledLambdaFunctionUrl?: boolean;
+
+  /**
+   * Options to add a url to a Lambda function
+   * @default - authType: lambda.FunctionUrlAuthType.NONE
+   */
+  readonly functionUrlOptions?: lambda.FunctionUrlOptions;
 }
 
 export class CertbotDnsRoute53Job extends Construct {
@@ -116,6 +128,18 @@ export class CertbotDnsRoute53Job extends Construct {
           new target.LambdaFunction(lambdaFun.handler),
         ],
       });
-    }
+    };
+
+    if (props.enabledLambdaFunctionUrl) {
+      const url = new lambda.FunctionUrl(this, 'LambdaFunctionUrl', {
+        function: lambdaFun.handler,
+        authType: lambda.FunctionUrlAuthType.NONE,
+        ...props.functionUrlOptions,
+      });
+
+      new cdk.CfnOutput(this, 'lambdaFunctionUrl', {
+        value: url.url,
+      });
+    };
   }
 }
