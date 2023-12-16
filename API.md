@@ -225,6 +225,32 @@ Custom lambda Image Architecture.
 
 ---
 
+##### `enabledLambdaFunctionUrl`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.enabledLambdaFunctionUrl"></a>
+
+```typescript
+public readonly enabledLambdaFunctionUrl: boolean;
+```
+
+- *Type:* `boolean`
+- *Default:* false
+
+Enabled Lambda Function URL.
+
+---
+
+##### `functionUrlOptions`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.functionUrlOptions"></a>
+
+```typescript
+public readonly functionUrlOptions: FunctionUrlOptions;
+```
+
+- *Type:* [`@aws-cdk/aws-lambda.FunctionUrlOptions`](#@aws-cdk/aws-lambda.FunctionUrlOptions)
+- *Default:* authType: lambda.FunctionUrlAuthType.NONE
+
+Options to add a url to a Lambda function.
+
+---
+
 ##### `schedule`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.CertbotDnsRoute53JobProps.property.schedule"></a>
 
 ```typescript
@@ -232,7 +258,7 @@ public readonly schedule: Schedule;
 ```
 
 - *Type:* [`@aws-cdk/aws-events.Schedule`](#@aws-cdk/aws-events.Schedule)
-- *Default:* no shedule
+- *Default:* no schedule
 
 run the Job with defined schedule.
 

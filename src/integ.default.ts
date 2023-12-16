@@ -25,6 +25,7 @@ new CertbotDnsRoute53Job(stack, 'Demo', {
   }),
   destinationBucket: s3.Bucket.fromBucketName(stack, 'myBucket', stack.node.tryGetContext('BUCKETNAME') ?? 'mybucket'),
   architecture: lambda.Architecture.X86_64,
+  enabledLambdaFunctionUrl: false,
 });
 
 
