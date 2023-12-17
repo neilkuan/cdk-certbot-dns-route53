@@ -368,16 +368,12 @@ test('test PythonLambdaFunction', () => {
     zone,
     destinationBucket: bucket,
     schedule: events.Schedule.cron({ month: '2' }),
-    architecture: lambda.Architecture.ARM_64,
     enabledLambdaFunctionUrl: true,
     functionUrlOptions: {
       authType: lambda.FunctionUrlAuthType.AWS_IAM,
     },
   });
   assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
-    Architectures: [
-      'arm64',
-    ],
     Environment: {
       Variables: {
         BUCKET_NAME: {
@@ -391,9 +387,6 @@ test('test PythonLambdaFunction', () => {
   });
 
   assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
-    Architectures: [
-      'arm64',
-    ],
     Environment: {
       Variables: {
         BUCKET_NAME: {

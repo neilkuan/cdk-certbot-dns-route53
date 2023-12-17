@@ -112,7 +112,6 @@ new CertbotDnsRoute53JobPython(stack, 'Testtask', {
   zone,
   destinationBucket: bucket,
   schedule: events.Schedule.cron({ month: '2' }),
-  architecture: lambda.Architecture.ARM_64,
   enabledLambdaFunctionUrl: true,
 });
 

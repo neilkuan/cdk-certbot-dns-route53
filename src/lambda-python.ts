@@ -27,7 +27,6 @@ export class LambdaPythonFunction extends Construct {
       logRetention: logs.RetentionDays.ONE_DAY,
       environment: props.environment,
       role: props.role,
-      architecture: props.architecture,
       memorySize: 1024,
       bundling: {
         platform: props.architecture.dockerPlatform,
