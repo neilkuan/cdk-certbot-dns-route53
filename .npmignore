@@ -3,6 +3,8 @@ cdk.context.json
 yarn-error.log
 cdk.out
 images
+assets/venv/**
+assets/layers/**
 /.projen/
 /test-reports/
 junit.xml

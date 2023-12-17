@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '2.110.0',
+  cdkVersion: '2.115.0',
   /**
    * we default release the main branch(cdkv2) with major version 2.
    */
@@ -24,6 +24,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     workflowOptions: {
       labels: ['auto-approve', 'auto-merge'],
     },
+    exclude: ['mock-fs'],
   },
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
@@ -41,14 +42,25 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'cdk.context.json',
     'yarn-error.log',
     'cdk.out',
+    'assets/venv/**',
+    'assets/layers/**',
+    'venv/**',
   ],
   npmignore: [
     'cdk.context.json',
     'yarn-error.log',
     'cdk.out',
     'images',
+    'assets/venv/**',
+    'assets/layers/**',
   ],
   workflowNodeVersion: '^16.20.0',
   typescriptVersion: '^4.9',
+  deps: [
+    '@aws-cdk/aws-lambda-python-alpha@2.115.0-alpha.0',
+  ],
+  bundledDependencies: [
+    '@aws-cdk/aws-lambda-python-alpha@2.115.0-alpha.0',
+  ],
 });
 project.synth();
