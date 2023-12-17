@@ -63,7 +63,7 @@ export class BashExecFunction extends Construct {
       logRetention: logs.RetentionDays.ONE_DAY,
       environment: props.environment,
       role: props.role,
-      architecture: props.architecture ?? lambda.Architecture.X86_64,
+      architecture: props.architecture,
       memorySize: 1024,
     });
     new CfnOutput(this, 'LogGroup', { value: this.handler.logGroup.logGroupName });
