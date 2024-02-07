@@ -357,7 +357,7 @@ public readonly domainName: string;
 
 - *Type:* `string`
 
-the domain must host on route53 like example.com. the domain must host on route53 like example.com.
+the domain must host on route53 like example.com.
 
 ---
 
@@ -371,8 +371,6 @@ public readonly email: string;
 
 Email address for important account notifications.
 
-Email address for important account notifications.
-
 ---
 
 ##### `customPrefixDirectory`<sup>Optional</sup> <a name="cdk-certbot-dns-route53.CertbotOptions.property.customPrefixDirectory"></a>
@@ -383,8 +381,6 @@ public readonly customPrefixDirectory: string;
 
 - *Type:* `string`
 - *Default:* `s3://YOUR_BUCKET_NAME/2021-01-01/your.domain.name/`
-
-Custom prefix directory on s3 bucket object path.
 
 Custom prefix directory on s3 bucket object path.
 
