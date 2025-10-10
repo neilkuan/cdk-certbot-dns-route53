@@ -60,12 +60,14 @@ export class BashExecFunction extends Construct {
       code: lambda.DockerImageCode.fromImageAsset(dockerDirPath, {
       }),
       timeout: props.timeout ?? Duration.seconds(60),
-      logRetention: logs.RetentionDays.ONE_DAY,
+      logGroup: new logs.LogGroup(this, 'LogGroup', {
+        retention: logs.RetentionDays.ONE_DAY,
+      }),
       environment: props.environment,
       role: props.role,
       architecture: props.architecture,
       memorySize: 1024,
     });
-    new CfnOutput(this, 'LogGroup', { value: this.handler.logGroup.logGroupName });
+    new CfnOutput(this, 'LogGroupOutput', { value: this.handler.logGroup.logGroupName });
   }
 }

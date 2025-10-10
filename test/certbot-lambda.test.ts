@@ -42,21 +42,6 @@ test('only create certbot lambda.', () => {
     },
   });
   assertions.Template.fromStack(stack).findResources('AWS::IAM::Role');
-  assertions.Template.fromStack(stack).hasResourceProperties('AWS::IAM::Policy', {
-    PolicyDocument: {
-      Statement: [
-        {
-          Action: [
-            'logs:PutRetentionPolicy',
-            'logs:DeleteRetentionPolicy',
-          ],
-          Effect: 'Allow',
-          Resource: '*',
-        },
-      ],
-      Version: '2012-10-17',
-    },
-  });
 });
 
 test('create certbot lambda schedule rule.', () => {
@@ -87,21 +72,6 @@ test('create certbot lambda schedule rule.', () => {
     },
   });
   assertions.Template.fromStack(stack).findResources('AWS::IAM::Role');
-  assertions.Template.fromStack(stack).hasResourceProperties('AWS::IAM::Policy', {
-    PolicyDocument: {
-      Statement: [
-        {
-          Action: [
-            'logs:PutRetentionPolicy',
-            'logs:DeleteRetentionPolicy',
-          ],
-          Effect: 'Allow',
-          Resource: '*',
-        },
-      ],
-      Version: '2012-10-17',
-    },
-  });
   assertions.Template.fromStack(stack).hasResourceProperties('AWS::Events::Rule', {
     ScheduleExpression: 'cron(* * * 2 ? *)',
     State: 'ENABLED',
