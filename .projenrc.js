@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '2.115.0',
+  cdkVersion: '2.219.0',
   /**
    * we default release the main branch(cdkv2) with major version 2.
    */
@@ -54,13 +54,14 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'assets/venv/**',
     'assets/layers/**',
   ],
-  workflowNodeVersion: '^16.20.0',
-  typescriptVersion: '^4.9',
+  workflowNodeVersion: '^20',
+  typescriptVersion: '^5',
+  jsiiVersion: '5.7.x',
   deps: [
-    '@aws-cdk/aws-lambda-python-alpha@2.115.0-alpha.0',
+    '@aws-cdk/aws-lambda-python-alpha@2.219.0-alpha.0',
   ],
-  bundledDependencies: [
-    '@aws-cdk/aws-lambda-python-alpha@2.115.0-alpha.0',
+  peerDependencies: [
+    '@aws-cdk/aws-lambda-python-alpha@2.219.0-alpha.0',
   ],
 });
 project.synth();

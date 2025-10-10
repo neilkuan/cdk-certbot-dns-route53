@@ -24,7 +24,7 @@ new CertbotDnsRoute53JobPython(stack, 'Demo', {
     hostedZoneId: stack.node.tryGetContext('HOSTZONEID'),
   }),
   destinationBucket: s3.Bucket.fromBucketName(stack, 'myBucket', stack.node.tryGetContext('BUCKETNAME')),
-  architecture: lambda.Architecture.X86_64,
+  architecture: lambda.Architecture.ARM_64,
   enabledLambdaFunctionUrl: true,
   // enabledLambdaFunctionUrl: false,
 });

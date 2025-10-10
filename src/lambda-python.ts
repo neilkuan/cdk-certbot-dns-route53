@@ -24,14 +24,17 @@ export class LambdaPythonFunction extends Construct {
       index: 'main.py',
       runtime: lambda.Runtime.PYTHON_3_12,
       timeout: props.timeout ?? Duration.seconds(60),
-      logRetention: logs.RetentionDays.ONE_DAY,
+      logGroup: new logs.LogGroup(this, 'LogGroup', {
+        retention: logs.RetentionDays.ONE_DAY,
+      }),
       environment: props.environment,
       role: props.role,
+      architecture: props.architecture,
       memorySize: 1024,
       bundling: {
         platform: props.architecture.dockerPlatform,
       },
     });
-    new CfnOutput(this, 'LogGroup', { value: this.handler.logGroup.logGroupName });
+    new CfnOutput(this, 'LogGroupOutput', { value: this.handler.logGroup.logGroupName });
   }
 }
