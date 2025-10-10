@@ -182,7 +182,7 @@ export class CertbotDnsRoute53JobPython extends Construct {
 
     const lambdaFun = new LambdaPythonFunction(this, 'certbotDnsRoute53JobPythonLambda', {
       timeout: cdk.Duration.minutes(5),
-      architecture: lambda.Architecture.X86_64,
+      architecture: props.architecture ?? lambda.Architecture.X86_64,
       environment: {
         ...certOptions,
       },

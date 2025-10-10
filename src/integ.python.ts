@@ -23,8 +23,10 @@ new CertbotDnsRoute53JobPython(stack, 'Demo', {
     zoneName: stack.node.tryGetContext('ZONENAME'),
     hostedZoneId: stack.node.tryGetContext('HOSTZONEID'),
   }),
-  destinationBucket: s3.Bucket.fromBucketName(stack, 'myBucket', stack.node.tryGetContext('BUCKETNAME')),
-  architecture: lambda.Architecture.X86_64,
+  destinationBucket: new s3.Bucket(stack, 'myBucket123', {
+    removalPolicy: cdk.RemovalPolicy.DESTROY,
+  }),
+  architecture: lambda.Architecture.ARM_64,
   enabledLambdaFunctionUrl: true,
   // enabledLambdaFunctionUrl: false,
 });
