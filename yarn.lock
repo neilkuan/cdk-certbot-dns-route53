@@ -29,9 +29,9 @@
   integrity sha512-4h5n5zli8nzGQL4vXQDtQVzmUa3ee0U27MK+iP6zX5vmJ6DD5ooXkk6eSw9Cqi994yejQ2oDgqriDPmXzAqJ8Q==
 
 "@aws-cdk/cloud-assembly-schema@^48.6.0":
-  version "48.13.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-48.13.0.tgz#43e25476029b1de096d6d88539b456682ff6de20"
-  integrity sha512-xzcNCfygJRJJ+S1DI82hNcUgNWcwj0Z4tnTeBJ+5uW7f5rpyP9objT4L3OaEGdumLuOSuuvy5+iQQNAjCic0zA==
+  version "48.14.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-48.14.0.tgz#ba1a00961451966a79e505a3964f03b7774c95ce"
+  integrity sha512-mo1MaPKsNVh3QSuosREcwIh8TrVZ9deHVLAjzbjkQuTxb/7LGqkf1E5HHxlAt6Z0+z+DZt7dTPIJ92NcR0tjDQ==
   dependencies:
     jsonschema "~1.4.1"
     semver "^7.7.2"
@@ -1320,9 +1320,9 @@ balanced-match@^1.0.0:
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
 baseline-browser-mapping@^2.8.9:
-  version "2.8.15"
-  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.8.15.tgz#78d795047dcd878e29c0c0f7a916c782fb96e062"
-  integrity sha512-qsJ8/X+UypqxHXN75M7dF88jNK37dLBRW7LeUzCPz+TNs37G8cfWy9nWzS+LS//g600zrt2le9KuXt0rWfDz5Q==
+  version "2.8.16"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.8.16.tgz#e17789673e7f4b7654f81ab2ef25e96ab6a895f9"
+  integrity sha512-OMu3BGQ4E7P1ErFsIPpbJh0qvDudM/UuJeHgkAvfWe+0HFJCXh+t/l8L6fVLR55RI/UbKrVLnAXZSVwd9ysWYw==
 
 brace-expansion@^1.1.7:
   version "1.1.12"
