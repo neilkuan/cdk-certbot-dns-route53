@@ -64,5 +64,19 @@ const project = new awscdk.AwsCdkConstructLibrary({
   workflowNodeVersion: '24',
   typescriptVersion: '^5',
   jsiiVersion: '5.9.x',
+  npmProvenance: true,
+  npmTokenSecret: '',
+  npmTrustedPublishing: true,
 });
+
+// Override release workflow to add registry-url for OIDC Trusted Publishing
+const releaseWorkflow = project.tryFindObjectFile('.github/workflows/release.yml');
+releaseWorkflow.addOverride('jobs.release_npm.steps.0.with.registry-url', 'https://registry.npmjs.org');
+
+// Add provenance to publishConfig
+project.package.addField('publishConfig', {
+  access: 'public',
+  provenance: true,
+});
+
 project.synth();
