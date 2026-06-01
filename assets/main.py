@@ -70,10 +70,7 @@ def handler(events, contexts):
   
 
 def domain_path_helper(domain: str):
-  d = domain.split('.')
-  try:
-    d.remove('*')
-  except:
-    pass
-  r = '.'.join(d)
-  return r
+  first_domain = domain.split(',')[0].strip()
+  if first_domain.startswith('*.'):
+    first_domain = first_domain[2:]
+  return first_domain
