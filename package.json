@@ -50,11 +50,11 @@
     "jest": "^27",
     "jest-junit": "^17",
     "jsii": "5.9.x",
-    "jsii-diff": "^1.135.0",
+    "jsii-diff": "^1.136.0",
     "jsii-docgen": "^10.5.0",
-    "jsii-pacmak": "^1.135.0",
+    "jsii-pacmak": "^1.136.0",
     "jsii-rosetta": "5.9.x",
-    "projen": "^0.99.76",
+    "projen": "^0.99.80",
     "ts-jest": "^27",
     "typescript": "^5"
   },
@@ -75,6 +75,7 @@
   },
   "main": "lib/index.js",
   "license": "Apache-2.0",
+  "stability": "stable",
   "publishConfig": {
     "access": "public",
     "provenance": true
@@ -122,7 +123,6 @@
     }
   },
   "types": "lib/index.d.ts",
-  "stability": "stable",
   "jsii": {
     "outdir": "dist",
     "targets": {
