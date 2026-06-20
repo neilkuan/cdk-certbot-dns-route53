@@ -75,12 +75,14 @@ export interface CertbotOptions {
 export class CertbotDnsRoute53JobPython extends Construct {
   constructor(scope: Construct, id: string, props: CertbotDnsRoute53JobProps ) {
     super(scope, id);
-    const certOptions = {
+    const certOptions: Record<string, string> = {
       BUCKET_NAME: props.destinationBucket.bucketName,
       EMAIL: props.certbotOptions.email,
       DOMAIN_NAME: props.certbotOptions.domainName,
-      CUSTOM_PREFIX_DIRECTORY: props.certbotOptions.customPrefixDirectory!,
     };
+    if (props.certbotOptions.customPrefixDirectory) {
+      certOptions.CUSTOM_PREFIX_DIRECTORY = props.certbotOptions.customPrefixDirectory;
+    }
 
     const lambdaFun = new LambdaPythonFunction(this, 'certbotDnsRoute53JobPythonLambda', {
       timeout: cdk.Duration.minutes(5),

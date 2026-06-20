@@ -74,3 +74,32 @@ test('test PythonLambdaFunction', () => {
   });
 
 });
+
+test('CUSTOM_PREFIX_DIRECTORY is omitted when customPrefixDirectory is not set', () => {
+  const mockApp = new cdk.App();
+  const stack = new cdk.Stack(mockApp, 'teststack', { env: devEnv });
+  const bucket = new s3.Bucket(stack, 'testingBucket');
+  const zone = r53.HostedZone.fromHostedZoneAttributes(stack, 'zone', {
+    zoneName: mock.zoneName, hostedZoneId: mock.zoneId,
+  });
+  new CertbotDnsRoute53JobPython(stack, 'Testtask', {
+    certbotOptions: {
+      domainName: 'example.com',
+      email: 'user@example.com',
+    },
+    zone,
+    destinationBucket: bucket,
+  });
+  assertions.Template.fromStack(stack).hasResourceProperties('AWS::Lambda::Function', {
+    Environment: {
+      Variables: {
+        BUCKET_NAME: {
+          Ref: 'testingBucket9FA8E574',
+        },
+        EMAIL: 'user@example.com',
+        DOMAIN_NAME: 'example.com',
+        CUSTOM_PREFIX_DIRECTORY: assertions.Match.absent(),
+      },
+    },
+  });
+});
