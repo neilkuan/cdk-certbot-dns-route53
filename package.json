@@ -54,7 +54,7 @@
     "jsii-docgen": "^10.5.0",
     "jsii-pacmak": "^1.136.0",
     "jsii-rosetta": "5.9.x",
-    "projen": "^0.99.80",
+    "projen": "^0.100.0",
     "ts-jest": "^27",
     "typescript": "^5"
   },
@@ -131,10 +131,8 @@
         "module": "cdk_certbot_dns_route53"
       }
     },
-    "tsc": {
-      "outDir": "lib",
-      "rootDir": "src"
-    }
+    "tsconfig": "tsconfig.json",
+    "validateTsconfig": "strict"
   },
   "awscdkio": {
     "twitter": "neilkuan",
