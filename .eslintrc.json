@@ -213,6 +213,18 @@
       "files": [
         ".projenrc.js"
       ],
+      "parserOptions": {
+        "project": null
+      },
+      "rules": {
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/return-await": "off"
+      }
+    },
+    {
+      "files": [
+        ".projenrc.js"
+      ],
       "rules": {
         "@typescript-eslint/no-require-imports": "off",
         "import/no-extraneous-dependencies": "off"
