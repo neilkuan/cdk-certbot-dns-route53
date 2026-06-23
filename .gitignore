@@ -49,7 +49,7 @@ junit.xml
 !/.github/pull_request_template.md
 !/test/
 !/tsconfig.json
-!/test/tsconfig.json
+!/tsconfig.dev.json
 !/src/
 /lib
 /dist/

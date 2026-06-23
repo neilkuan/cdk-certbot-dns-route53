@@ -8,7 +8,7 @@ permissions-backup.acl
 /dist/version.txt
 /.mergify.yml
 /test/
-/test/tsconfig.json
+/tsconfig.dev.json
 /src/
 !/lib/
 !/lib/**/*.js
