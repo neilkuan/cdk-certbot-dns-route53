@@ -60,9 +60,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'ts-jest@29.1.2',
     'jsii-rosetta@5.0.x',
   ],
-  eslintOptions: {
-    allowDefaultProject: ['.projenrc.js'],
-  },
+
   minNodeVersion: '24.0.0',
   workflowNodeVersion: '24',
   typescriptVersion: '^5',
@@ -82,6 +80,7 @@ project.package.addField('publishConfig', {
   provenance: true,
 });
 
+project.eslint.allowDefaultProjectFiles('.projenrc.js');
 project.eslint.addOverride({
   files: ['.projenrc.js'],
   parserOptions: { project: null },
