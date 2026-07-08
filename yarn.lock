@@ -1405,9 +1405,9 @@ camelcase@^6.2.0, camelcase@^6.3.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001800:
-  version "1.0.30001802"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001802.tgz#2671fb13d468930586c56ffa80feb1c51e18ec69"
-  integrity sha512-vmv8ub2xwTNmljSKf82mtCk5JH7hC+YgzLj3P5zotvA0tPQ9016tdNNOG8WRca1IxOnhSsivB+J0z5FeE5LOUw==
+  version "1.0.30001803"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001803.tgz#b2a5d696e042bc8304dcd4942c39fe330fbbcb24"
+  integrity sha512-g/uHREV2ZpK9qMalCsWaxmA6ol+DX8GYhuf3T40RKoP+oL7vhRJh8LNt73PCjpnR6l14FzfPrB5Yux4PKm2meg==
 
 case@1.6.3, case@^1.6.3:
   version "1.6.3"
@@ -1825,9 +1825,9 @@ dateformat@^3.0.3:
   integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
 
 dax@^0.48.3:
-  version "0.48.5"
-  resolved "https://registry.yarnpkg.com/dax/-/dax-0.48.5.tgz#9cbd58ca242e2ee0cb51d454a71844f4c6eacb04"
-  integrity sha512-VD8Psce/GBQpicDAIe9/rSEt884FImPBZkaW+uq0oAowXN6TsUbfzN6gGQgF4S/6lfgU/p+ty4JAi2WLZgGKaA==
+  version "0.48.6"
+  resolved "https://registry.yarnpkg.com/dax/-/dax-0.48.6.tgz#6971912040edc8e4e6525b769d374893576bcf86"
+  integrity sha512-f4NDrcwptOwIDq71FaA5RpjBUBj+i/AQSvx2Wbt5U1biAg/HldwAqEayxO7ODyvN0Tmpb64S4tPv/V7zej0Rzg==
   dependencies:
     undici-types "^5.26"
 
@@ -1970,9 +1970,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.387:
-  version "1.5.388"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.388.tgz#002666dfda32e087c44fd01b7ce1719b6ec89c57"
-  integrity sha512-Pl/aJaqOOxYxda3vcx1IKSJimwYXHDkEnGn0F+kG2EE68dDtx2uCinaS+Vih8Z91B9t8CSAbiF/HKyWcnXjhzw==
+  version "1.5.389"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.389.tgz#538be9ebec78026d4daba6be321ab854dfac2a8f"
+  integrity sha512-cEto7aeOqBfU1D+c5py5pE+ooscKE75JifxLBdFUZsqAxRS6y7kebtxAZvICszSl05gPjYHDTjY+lXpyGvpJbg==
 
 emittery@^0.8.1:
   version "0.8.1"
