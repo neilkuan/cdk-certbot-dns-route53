@@ -1414,9 +1414,9 @@ chalk@^4, chalk@^4.0.0, chalk@^4.1.2:
     supports-color "^7.1.0"
 
 chalk@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-6.0.0.tgz#a3bae843bc8454f41ef66ef3fd584dcf34dd805d"
-  integrity sha512-2uNTXIuTTxk7ciZgAU1BQcgnchcG0xXnrs6jzkQfj9SsRa9M2s5zE8WT96hS6KmG4MzWHSrvH43DF1m4XRkrFg==
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-6.0.1.tgz#077d4667ad6e608c9687782caed3d534d7f9abc3"
+  integrity sha512-/Ce6KNm3vIbWdMlNna6RVIZ/ICQxnJxCicet5LBKK9ZffBkqzDw0xh9EiKSljdRtiIQ1S1z4YgcscUUGzNCWrA==
 
 char-regex@^1.0.2:
   version "1.0.2"
@@ -4447,9 +4447,9 @@ stop-iteration-iterator@^1.1.0:
     internal-slot "^1.1.0"
 
 stream-chain@^4.2.5:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/stream-chain/-/stream-chain-4.2.5.tgz#9061d29573ab79c49258b2cbe2f72bed7629c79f"
-  integrity sha512-Wtyq3bNE3ggLR0v2vftqvuhltym3WbZAkZpfIrkr5F/6vpeUmWmwTgXa16zD87gpahwJ/Qulq3zVfUlgIc0J2A==
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/stream-chain/-/stream-chain-4.2.6.tgz#0ff67bbf3e3fc05b46dd37fe39373229e1504776"
+  integrity sha512-1zeJ8CrtJfmiba26ui8jXkq/xLRFvhzkdH02D5QLO9Cnovgeb28IJxg88DdraWnjnkbOol/++uIAybJbJhk7ig==
 
 stream-json@^3.6.0:
   version "3.7.0"
