@@ -309,12 +309,7 @@
     "@simple-libs/stream-utils" "^2.0.0"
     verkit "^0.5.0"
 
-"@conventional-changelog/template@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@conventional-changelog/template/-/template-1.2.1.tgz#8f673635d6ec8289bc5d5a1264629fd1e88b8d4f"
-  integrity sha512-TzlTVpKPjaqW6qOYjQcYUDuGsLCNsvFHVBXkYGTAnf5V37jCWrE5haKNXzz0WZUtVHjrpV76L1buANjwXMfT8w==
-
-"@conventional-changelog/template@^1.4.0":
+"@conventional-changelog/template@1.4.0", "@conventional-changelog/template@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@conventional-changelog/template/-/template-1.4.0.tgz#30a8680f2ab8d3a60a08e86bebb33fe8f0f8f100"
   integrity sha512-aalGyl7dbB5PArRebDIX43ZvBlXrYm9uWzGJ26t+4SzJVPsOuvfILGGbw5X4yX7i50YEmJ8zvbiWnqH/AAnZqg==
@@ -1413,7 +1408,7 @@ chalk@^4, chalk@^4.0.0, chalk@^4.1.2:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^6.0.0:
+chalk@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-6.0.1.tgz#077d4667ad6e608c9687782caed3d534d7f9abc3"
   integrity sha512-/Ce6KNm3vIbWdMlNna6RVIZ/ICQxnJxCicet5LBKK9ZffBkqzDw0xh9EiKSljdRtiIQ1S1z4YgcscUUGzNCWrA==
@@ -1506,13 +1501,13 @@ comment-json@4.2.2:
     repeat-string "^1.6.1"
 
 commit-and-tag-version@^13:
-  version "13.2.2"
-  resolved "https://registry.yarnpkg.com/commit-and-tag-version/-/commit-and-tag-version-13.2.2.tgz#3a8065887a1f932c29ad82f35c31d7bbee8bd73d"
-  integrity sha512-2aFnMSpVZRRV37VTw4Ej6t0LqJ+gdWII01EgPDbItbQ4HvyX4rXX+wlVCKSv9XBUCi36S3K6CWKEtkRHsMCIHg==
+  version "13.3.0"
+  resolved "https://registry.yarnpkg.com/commit-and-tag-version/-/commit-and-tag-version-13.3.0.tgz#51e44aa256b1a3973d3bdf91e905c46a0633854d"
+  integrity sha512-jq+FeeY/kJ8sDriOe4A1xOiXSMuS9BYt9r4hhtH6Itx3+VkWSjdQa3y0SjXiTX0j7KmvShV3DbKR+ll2E38n1A==
   dependencies:
     "@conventional-changelog/git-client" "3.1.0"
-    "@conventional-changelog/template" "1.2.1"
-    chalk "^6.0.0"
+    "@conventional-changelog/template" "1.4.0"
+    chalk "^6.0.1"
     conventional-changelog "8.1.0"
     conventional-changelog-config-spec "2.1.0"
     conventional-changelog-conventionalcommits "10.4.0"
@@ -1825,9 +1820,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.439:
-  version "1.5.455"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.455.tgz#5a1349a3858c120fcf7107529d29a7c394eea9a3"
-  integrity sha512-EDKY1GvJLJC0UQpk+zWxnXp315azNHIns3arXVNUQUOLaon6GtIzBBXWvNno7bVoDXRPnEAV2uwgMCb+RvG5hQ==
+  version "1.5.456"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.456.tgz#cfa8b3b4c44450b8a28df4a7bc8be377cae1b691"
+  integrity sha512-8hboqI6xesozteFb8aa7OGknvxUtTeRJLz0FoePysUEh/oWbddykIGdgpEJRbPRg/nIMfBf2DFos+H2MtvJl2A==
 
 emittery@^0.8.1:
   version "0.8.1"
