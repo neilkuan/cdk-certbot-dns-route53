@@ -1404,9 +1404,9 @@ camelcase@^6.2.0, camelcase@^6.3.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001816:
-  version "1.0.30001817"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001817.tgz#c6e8835644f9bbeee50051ec0bae152f65f7bb0f"
-  integrity sha512-uZ1JG80BwhtMalIAGPxPfmNhHyd/B/nTdr3hITWlRamSyAdUStP1Gop01e7SD5q6J90ixJvWDbvmiFVfDgn4bw==
+  version "1.0.30001818"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001818.tgz#1dfaec65c9d407f6da4240b3e5ca4cb29ff44ca0"
+  integrity sha512-XJbgo4adscw7R4MZU4/qVFkoMyPaNUAWmdNY4o/k9x7fFwmv4frIlndI9lWuaxviW9ObiZel9LuncnQPn6hQ5A==
 
 case@1.6.3, case@^1.6.3:
   version "1.6.3"
@@ -1833,9 +1833,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.459:
-  version "1.5.462"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.462.tgz#df5cc84b4e343d13d55173f1ae067525ff8ee469"
-  integrity sha512-9qpCBlXPy5v7n1Q7WTO5rW2StI4WNQhl96HpgXRZLPlNoXAD0LbsQUflovQYAO44Yia073ISusqohncvGSMbGA==
+  version "1.5.463"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.463.tgz#c50be24baa76934f377198071e76b53e9685a301"
+  integrity sha512-nVWNU6ltFjopvOdD44J4zoBkgO0M+WZiFKKFV7EjebOH9z0KNphk6bCEjplXtJofL21ARIuuwWOCsFkBVklm6w==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -4062,10 +4062,10 @@ pretty-format@^27.0.0, pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-projen@^0.104.10:
-  version "0.104.10"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.104.10.tgz#db51c895b3db88ba27d4bb9390d1b16a2e5249ee"
-  integrity sha512-N8lRjL0Jq/vG0qj1FtrRqrdDTyam5MCjAQBdqKUdZOOtdekbzt1J9QOmoYpSLIcjxuOZA0RjWQqUx9AywS4nuQ==
+projen@^0.104.11:
+  version "0.104.11"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.104.11.tgz#9e0b62c13121cd7b779ceaeb0588ab9a935f048d"
+  integrity sha512-vTbGA5NmWdp+5nC7S9vuTXoUeW1K2FLyixNwd/1xmLN7loCYuUHT8I1uuvPSdRMVsY6OSgLllb1mVQAW/lFDGw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
