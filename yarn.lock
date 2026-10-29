@@ -799,9 +799,9 @@
     "@babel/types" "^7.28.2"
 
 "@types/estree@^1.0.6":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.9.tgz#cf3f0e876d7bee15a93ab925b82bf570a3904a24"
-  integrity sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.10.tgz#8a4a266065af8c2fcf5983153cd97c11b313d0c6"
+  integrity sha512-lTyOMnOcmRBzdCv6/4zUZCrEhV0xrqQiUZBZtVcbmLHBXKLnN8q89v/wKRF/Q0HbwVsqbIG3o5HDoFl9sduM+g==
 
 "@types/graceful-fs@^4.1.2":
   version "4.1.9"
@@ -848,9 +848,9 @@
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/node@*":
-  version "26.6.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-26.6.5.tgz#cb35209e7767c503551b5fa42a48231c7441d979"
-  integrity sha512-uMzsv9stDdofIZBx4UGh4Z9ZgXnGC9seRDscilBcTHAeOFk67MZg/k9bWVfO+bk4qZmG+l52hRnLwUiH2LnJTg==
+  version "26.6.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-26.6.6.tgz#9ed7b5817e728ed9216ef7c5b7d373fe3b777104"
+  integrity sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog==
   dependencies:
     undici-types "~8.9.0"
 
@@ -4049,10 +4049,10 @@ pretty-format@^27.0.0, pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-projen@^0.104.17:
-  version "0.104.17"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.104.17.tgz#26dbf8b9131ff0df1d556945faf160be8fce8833"
-  integrity sha512-dZwmVMNaMAGH6mnoc8s7qcNM1o6++NwmCwTNhjoz7BumjdsNvIdTDE9RZGVP61JcSzLLwACNegaDugAAhqkA0A==
+projen@^0.104.19:
+  version "0.104.19"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.104.19.tgz#6a18c8e09b17dfeb701f457028cc5401bc358c42"
+  integrity sha512-XJQW4vTXMgTk5u8HFAlUrs8K14e+ujp4Zw2y6j7yjBXPe/st0WDnMyoTf+ArI910T9IcgfLA2fMG3fCTqSUEvQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -4441,17 +4441,17 @@ stop-iteration-iterator@^1.1.0:
     es-errors "^1.3.0"
     internal-slot "^1.1.0"
 
-stream-chain@^4.2.5:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/stream-chain/-/stream-chain-4.3.0.tgz#7e6ea86656fb7a193bcfb1f7cd1be9392151cf7a"
-  integrity sha512-01QSuOXnqVS/eP67NMvXfpbwNSovfSpK1QWi6zg4EIArO7O8tQMhPT0cMRXl2wwK80gBjrPxgaLDSNzdQiKIuw==
+stream-chain@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/stream-chain/-/stream-chain-4.4.1.tgz#bd7f954214405a84a2bc1eeaf52335f7b0fad658"
+  integrity sha512-4MWXw+Si0RW3HAYQN3MdxpgTJA6Te9StiLtdkZO248DLPsRipqBbuiQSkyYLpCDEuvqGfqb2B5dEGxiEfHYkNQ==
 
 stream-json@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/stream-json/-/stream-json-3.7.0.tgz#49722876f93d85b82fc867b86df5da79ef699cd8"
-  integrity sha512-rCSBdcBP/bPk6T8QFcxAj1MSzAuc5i49cYW6IE7sYObNEPccBJIUiL6fU9c9BWt40aJK0siVynLX7lWaW8alXw==
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/stream-json/-/stream-json-3.8.0.tgz#cef8bd190d5cd591c0d86ea962249e62cf2eb439"
+  integrity sha512-xD0bPEoPgaaEpEu2HSq1spYAs5LSJrLAlo44SHycE+aI8W0IrU2cklY7fiQKhRTVbuvxNUij06vIiz1NBT+AZA==
   dependencies:
-    stream-chain "^4.2.5"
+    stream-chain "^4.4.1"
 
 streamroller@^3.1.5:
   version "3.1.5"
