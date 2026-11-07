@@ -1396,9 +1396,9 @@ camelcase@^6.2.0, camelcase@^6.3.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001819:
-  version "1.0.30001822"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001822.tgz#8fb8d945f5c89b1701f4360745144e3fe2ee7a7a"
-  integrity sha512-Y3fvWQWzc69dlCyr07tuNrEhotv+db5FpMSPD3slZnkPKwRNOKwFBz2dP966XUmWMXLTOt+YShkFoQoom3U7hg==
+  version "1.0.30001823"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001823.tgz#331a7cb49aa317517697e76b0b1295f2225959fe"
+  integrity sha512-TQ5s/djDjNk1axreUW+4rULH+BmdCMLiJkhaXnO5wqivG7tITkSUj4ItIdzqdZHKaXcHAV8dhH3JxOM7/7bwqw==
 
 case@1.6.3, case@^1.6.3:
   version "1.6.3"
@@ -4049,10 +4049,10 @@ pretty-format@^27.0.0, pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-projen@^0.104.25:
-  version "0.104.25"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.104.25.tgz#9ec1f63a9e00c2d057d6e7b96f309fc19ba91686"
-  integrity sha512-HmeK997sqh95aVSFNJR6WShSlZ2yzRrzL8D8EsXsmF5TKO3Zk84glesW2ntgPnznaI0bXuNAEZteQ1tl/Nptjw==
+projen@^0.104.27:
+  version "0.104.27"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.104.27.tgz#70b1d0b1421258e73af77df8ce765d8f23cdb415"
+  integrity sha512-L02IpJLrgNUTs06ssI256E+E0uaFQ5QZG3VaPntMqXVlvnuDaCVJHPx6JGt6pM/fxgvy0ZAKaLYxY3sSGXEOgg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
