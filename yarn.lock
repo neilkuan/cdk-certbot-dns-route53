@@ -682,7 +682,7 @@
     chalk "^4.1.2"
     semver "^7.8.6"
 
-"@jsii/spec@1.143.0", "@jsii/spec@^1.142.0":
+"@jsii/spec@1.143.0", "@jsii/spec@^1.142.0", "@jsii/spec@^1.143.0":
   version "1.143.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.143.0.tgz#1309e0cbb423529c3340db0ba072e7e67b7d398a"
   integrity sha512-37FQ1/6yzFBYVMSFkeDajUNjf/9OVgyi1zRh6aMGFjKfgiagVDoI83Pn2h5i3WgJzDXx556+BFevYtfYoS1dqg==
@@ -1325,9 +1325,9 @@ balanced-match@^4.0.2:
   integrity sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==
 
 baseline-browser-mapping@^2.11.37:
-  version "2.11.38"
-  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.11.38.tgz#3f7be275be548fb58ebce2b15cd2d2533141e4b5"
-  integrity sha512-rMgy5YW7x28SMfXHLlVZDBqlWzYZ0x2rVR/6FWrNBF0chjigARK1H6nM0hKA1Um3kPOlkQFVtjJs00d2N1ezuw==
+  version "2.11.39"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.11.39.tgz#4e99c4845e0c2100b6b1ef189bce3643d11e604e"
+  integrity sha512-Q9buOYhr2ggrEZpImICecZTJHCCd8yXkRUokFlUEQ8uiD6oP82F4W4jWnhOHZYV+wlvrC51V7Wy0ULyWjil5Wg==
 
 brace-expansion@^1.1.7:
   version "1.1.22"
@@ -1864,9 +1864,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.486:
-  version "1.5.491"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.491.tgz#c00de53d4dfab5363994b6ad1521e3c87dcc1fbc"
-  integrity sha512-zMOQrvaTekJMwENqx1Rnyl3qieqGxIui5CRu9g6ktKzQ/T54fq0Qfr3V/SEhGrkStWI3eYMSzMN4rbyFwfQSzA==
+  version "1.5.492"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.492.tgz#bd63a064a6ab036db630af5dfe83f4533de7cbf0"
+  integrity sha512-4uMs7omhajKiud0GqALLTazS/zyvHLTLmDWVTR+e6BnyJo5bSNrph/JoRWEFJJmY75ct9hCiSGsbFF9fLe5gDw==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -3456,15 +3456,15 @@ jsii-diff@^1.143.0:
     yargs "^17.7.3"
 
 jsii-docgen@^10.5.0:
-  version "10.12.9"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-10.12.9.tgz#0bbd02c17c61b4029232435d1e5e8f88c9053b1a"
-  integrity sha512-6KE1MsVu8Mq3UUimGqmpED6t+pmG5XOXpjdUldEdFS9w7zqSoAb0snJUliNoSKHLm+NF1DoP2ZNL5JyXfvRIFg==
+  version "10.13.0"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-10.13.0.tgz#7d610a4729ea1cb701b4fdbe8b4fe95c0f453723"
+  integrity sha512-s7kqscmTW1GSU02EfaCZ/xP0OqZn8Duchp18K5548YXm4J+BHqGezJPfsZ7HksEEjyb+xqPxU1/6oDnYnfOoEA==
   dependencies:
-    "@jsii/spec" "^1.142.0"
+    "@jsii/spec" "^1.143.0"
     case "^1.6.3"
     fast-glob "^3.3.3"
     fs-extra "^10.1.0"
-    jsii-reflect "^1.142.0"
+    jsii-reflect "^1.143.0"
     json-stream-stringify "^3.1.7"
     semver "^7.8.6"
     yargs "^16.2.2"
@@ -3487,7 +3487,7 @@ jsii-pacmak@^1.143.0:
     xmlbuilder "^15.1.1"
     yargs "^17.7.3"
 
-jsii-reflect@^1.142.0, jsii-reflect@^1.143.0:
+jsii-reflect@^1.143.0:
   version "1.143.0"
   resolved "https://registry.yarnpkg.com/jsii-reflect/-/jsii-reflect-1.143.0.tgz#647d2b3353bfc4591a324ac14b6a7c083f761c94"
   integrity sha512-lN+m5cRFzxF4TYJp2XS6qHRtDal6PMO/+aEojcg2y97Q128ynbNQfri/zO9CWFp/m0sm+XkRqQbTsdZVPBiMNg==
@@ -4089,10 +4089,10 @@ pretty-format@^27.0.0, pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-projen@^0.105.4:
-  version "0.105.4"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.105.4.tgz#797bbeb605da31a5eb9625990e5058aa8472915e"
-  integrity sha512-qiNpG8ocD6Szy5L+lb3V4zQAjjOsP2vH076pZB05TcYplOm5YOKoFLvuXnHoGXuExT19mok9kN+lmLgpsA9YNQ==
+projen@^0.105.6:
+  version "0.105.6"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.105.6.tgz#456ef6146f21b239411282f121a455ea829848ce"
+  integrity sha512-GChhH8h8xxNNfPKXlKJMhRiPpsJ9AyW4KYvQ21Z9R7VIKkvSU7SjaOz4X/qjq449sgwuXHWZoDAEQf0TgA9HNA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
