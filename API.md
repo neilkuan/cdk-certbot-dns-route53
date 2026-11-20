@@ -4,6 +4,8 @@
 
 ### CertbotDnsRoute53JobPython <a name="CertbotDnsRoute53JobPython" id="cdk-certbot-dns-route53.CertbotDnsRoute53JobPython"></a>
 
+- *Implements:* constructs.IConstruct, constructs.IDependable
+
 #### Initializers <a name="Initializers" id="cdk-certbot-dns-route53.CertbotDnsRoute53JobPython.Initializer"></a>
 
 ```typescript
@@ -138,6 +140,8 @@ The tree node.
 
 
 ### LambdaPythonFunction <a name="LambdaPythonFunction" id="cdk-certbot-dns-route53.LambdaPythonFunction"></a>
+
+- *Implements:* constructs.IConstruct, constructs.IDependable
 
 #### Initializers <a name="Initializers" id="cdk-certbot-dns-route53.LambdaPythonFunction.Initializer"></a>
 
